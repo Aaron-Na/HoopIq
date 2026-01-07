@@ -1,23 +1,55 @@
+/**
+ * PredictionsPage.tsx - NBA Game Predictions Component
+ * 
+ * This React component displays ML-powered predictions for upcoming NBA games.
+ * 
+ * Architecture:
+ * 1. Fetches real game schedule from backend API
+ * 2. Fetches team statistics for prediction calculations
+ * 3. Applies prediction algorithm to each game
+ * 4. Renders prediction cards with win probabilities
+ * 
+ * React Concepts Used:
+ * - useState: Local state management for predictions, loading, errors
+ * - useEffect: Side effects (API calls) on component mount
+ * - Conditional rendering: Show loading spinner or error messages
+ * - Array.map(): Transform data arrays into JSX elements
+ * 
+ * TypeScript Concepts:
+ * - Interface definitions for type safety
+ * - Generic types: Record<string, T> for hash maps
+ * - Type annotations on function parameters and returns
+ */
+
 import { useState, useEffect } from 'react'
 import { Container, Typography, Grid, Card, CardContent, Box, Chip, CircularProgress, Button } from '@mui/material'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
 import RefreshIcon from '@mui/icons-material/Refresh'
 import { api, ScheduledGame, TeamStats } from '../api'
 
+/**
+ * TypeScript Interface: Defines the shape of a game prediction object.
+ * Interfaces provide compile-time type checking and IDE autocomplete.
+ * This is similar to a struct in C or a class definition without methods.
+ */
 interface GamePrediction {
   id: number
   gameId: string
   homeTeam: { name: string; city: string; abbreviation: string; logo: string }
   awayTeam: { name: string; city: string; abbreviation: string; logo: string }
-  homeWinProb: number
-  awayWinProb: number
-  predictedWinner: string
-  confidence: number
+  homeWinProb: number      // Probability home team wins (0-100)
+  awayWinProb: number      // Probability away team wins (0-100)
+  predictedWinner: string  // Team abbreviation of predicted winner
+  confidence: number       // Max of home/away prob (always >= 50)
   date: string
   time: string
 }
 
-// NBA team logo URLs
+/**
+ * Hash map of team abbreviations to NBA CDN logo URLs.
+ * Record<K, V> is TypeScript's built-in type for objects used as dictionaries.
+ * Time Complexity: O(1) lookup by key
+ */
 const teamLogos: Record<string, string> = {
   'BOS': 'https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg',
   'OKC': 'https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg',
@@ -31,32 +63,75 @@ const teamLogos: Record<string, string> = {
   'MIA': 'https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg',
 }
 
-// Generate prediction based on team stats
+/**
+ * Calculate win probability for a game using team statistics.
+ * 
+ * This is a simplified prediction model that runs in the browser.
+ * It uses a linear combination of features similar to the ML model.
+ * 
+ * Algorithm:
+ * 1. Start with base probability of 50% (coin flip)
+ * 2. Add/subtract based on win percentage difference
+ * 3. Add home court advantage (~3% based on NBA research)
+ * 4. Adjust based on net rating (points scored - points allowed)
+ * 5. Clamp result to reasonable range [20%, 80%]
+ * 
+ * @param homeAbbr - Home team abbreviation (e.g., "BOS")
+ * @param awayAbbr - Away team abbreviation (e.g., "NYK")
+ * @param teamStatsMap - Hash map of team stats for O(1) lookup
+ * @returns Object with homeWinProb, awayWinProb, confidence (all 0-100)
+ */
 function calculatePrediction(
   homeAbbr: string, 
   awayAbbr: string, 
   teamStatsMap: Record<string, TeamStats>
 ): { homeWinProb: number; awayWinProb: number; confidence: number } {
+  // O(1) hash map lookups to get team statistics
   const homeStats = teamStatsMap[homeAbbr]
   const awayStats = teamStatsMap[awayAbbr]
   
+  // Guard clause: return 50-50 if stats not available
+  // This is defensive programming - handle edge cases gracefully
   if (!homeStats || !awayStats) {
     return { homeWinProb: 50, awayWinProb: 50, confidence: 50 }
   }
   
-  // Prediction model using real stats
-  const homeAdvantage = 0.03 // ~3% home court advantage
+  // ============ PREDICTION MODEL ============
+  // Based on empirical NBA research and statistical analysis
+  
+  // Home court advantage: NBA teams win ~60% at home historically
+  // This translates to roughly +3% probability boost
+  const homeAdvantage = 0.03
+  
+  // Win percentage difference: strongest predictor of game outcome
+  // If home team has 70% win rate and away has 50%, diff = +0.20
   const winPctDiff = homeStats.win_pct - awayStats.win_pct
+  
+  // Net Rating = Points Scored - Points Allowed (per game)
+  // Positive = good offense + defense, Negative = struggling team
+  // This captures team quality beyond just wins/losses
   const netRatingHome = homeStats.ppg - homeStats.opp_ppg
   const netRatingAway = awayStats.ppg - awayStats.opp_ppg
-  const netRatingDiff = (netRatingHome - netRatingAway) / 20 // Normalize
   
-  // Calculate probability
+  // Normalize net rating difference to similar scale as win%
+  // Division by 20 converts ~20 point range to ~1.0 range
+  const netRatingDiff = (netRatingHome - netRatingAway) / 20
+  
+  // Linear combination of features to get probability
+  // Formula: P(home_win) = 0.5 + (win_pct_diff / 2) + home_advantage + net_rating_factor
   let homeProb = 0.5 + winPctDiff / 2 + homeAdvantage + netRatingDiff
-  homeProb = Math.max(0.20, Math.min(0.80, homeProb)) // Clamp between 20-80%
   
+  // Clamp probability to [0.20, 0.80] range
+  // Math.max(0.20, Math.min(0.80, x)) ensures: 0.20 <= x <= 0.80
+  // This prevents unrealistic extreme predictions
+  homeProb = Math.max(0.20, Math.min(0.80, homeProb))
+  
+  // Convert to percentage (0-100 scale) and round to integer
   const homeWinProb = Math.round(homeProb * 100)
-  const awayWinProb = 100 - homeWinProb
+  const awayWinProb = 100 - homeWinProb  // Probabilities must sum to 100
+  
+  // Confidence = probability of the predicted winner
+  // Always >= 50 since we pick the team with higher probability
   const confidence = Math.round(Math.max(homeWinProb, awayWinProb))
   
   return { homeWinProb, awayWinProb, confidence }

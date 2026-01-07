@@ -1,5 +1,29 @@
 """
-Train NBA game prediction model using scikit-learn.
+Train NBA Game Prediction Model using scikit-learn.
+
+This script implements a supervised machine learning pipeline for binary classification:
+- Input: Team statistics (features)
+- Output: Probability of home team winning (binary: 0 or 1)
+
+Machine Learning Concepts Used:
+1. Feature Engineering: Converting raw stats into predictive features
+2. Train/Test Split: Evaluating model on unseen data to detect overfitting
+3. Cross-Validation: K-fold CV for robust performance estimation
+4. Model Selection: Comparing multiple algorithms to find the best
+5. Feature Scaling: StandardScaler normalizes features for gradient-based models
+6. Model Persistence: Saving trained model to disk with joblib
+
+Models Evaluated:
+- Logistic Regression: Linear model, fast, interpretable, good baseline
+- Random Forest: Ensemble of decision trees, handles non-linear relationships
+- Gradient Boosting: Sequential ensemble, often highest accuracy
+
+Evaluation Metrics:
+- Accuracy: % of correct predictions (can be misleading for imbalanced data)
+- AUC-ROC: Area Under ROC Curve, measures ranking quality (0.5 = random, 1.0 = perfect)
+- Cross-Validation: Average accuracy across K folds (reduces variance in estimate)
+
+Author: HoopIQ Team
 """
 
 import pandas as pd
@@ -12,12 +36,19 @@ from sklearn.metrics import accuracy_score, classification_report, roc_auc_score
 import joblib
 from pathlib import Path
 
+# Directory paths for model storage and data access
 MODEL_DIR = Path(__file__).parent / 'models'
 DATA_DIR = Path(__file__).parent.parent / 'data' / 'processed'
 
+# Create models directory if it doesn't exist
+# exist_ok=True prevents error if directory already exists
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
-# Feature columns used for prediction
+# Feature columns used for prediction (must match feature engineering output)
+# These are the 11 features our model expects:
+# - 4 home team stats (win%, ppg, opp_ppg, point_diff)
+# - 4 away team stats (same metrics)
+# - 3 differential features (home - away for key metrics)
 FEATURE_COLS = [
     'home_win_pct', 'home_ppg', 'home_opp_ppg', 'home_point_diff',
     'away_win_pct', 'away_ppg', 'away_opp_ppg', 'away_point_diff',
@@ -36,10 +67,38 @@ def load_features():
 
 
 def train_models(X_train, X_test, y_train, y_test):
-    """Train and evaluate multiple models."""
+    """
+    Train and evaluate multiple ML models using the same train/test split.
+    
+    This implements a model comparison strategy where we:
+    1. Train each model on the same training data
+    2. Evaluate on the same test data
+    3. Perform cross-validation for robust estimates
+    
+    Parameters:
+        X_train: Training features, shape (n_train_samples, n_features)
+        X_test: Test features, shape (n_test_samples, n_features)
+        y_train: Training labels, shape (n_train_samples,)
+        y_test: Test labels, shape (n_test_samples,)
+    
+    Returns:
+        dict: Model name -> {model, accuracy, auc, cv_mean, cv_std}
+    """
+    # Dictionary of models to evaluate
+    # random_state=42 ensures reproducibility (same random splits each run)
     models = {
+        # Logistic Regression: P(y=1|x) = sigmoid(w·x + b)
+        # max_iter=1000 allows convergence for complex datasets
         'logistic_regression': LogisticRegression(max_iter=1000, random_state=42),
+        
+        # Random Forest: Ensemble of 100 decision trees
+        # max_depth=10 prevents overfitting (limits tree complexity)
+        # Each tree trained on bootstrap sample (bagging)
         'random_forest': RandomForestClassifier(n_estimators=100, max_depth=10, random_state=42),
+        
+        # Gradient Boosting: Sequential ensemble that corrects previous errors
+        # Each tree fits the residual errors of the ensemble so far
+        # Generally achieves highest accuracy but slower to train
         'gradient_boosting': GradientBoostingClassifier(n_estimators=100, max_depth=5, random_state=42)
     }
     
@@ -47,25 +106,37 @@ def train_models(X_train, X_test, y_train, y_test):
     
     for name, model in models.items():
         print(f"\nTraining {name}...")
+        
+        # fit() learns the model parameters from training data
+        # For LogisticRegression: learns weights w and bias b
+        # For tree ensembles: learns tree structures and split thresholds
         model.fit(X_train, y_train)
         
-        # Predictions
-        y_pred = model.predict(X_test)
-        y_prob = model.predict_proba(X_test)[:, 1]
+        # Generate predictions on test set
+        y_pred = model.predict(X_test)  # Hard predictions: 0 or 1
+        y_prob = model.predict_proba(X_test)[:, 1]  # Soft predictions: P(home_win)
         
-        # Metrics
+        # Calculate evaluation metrics
+        # Accuracy = (TP + TN) / (TP + TN + FP + FN)
         accuracy = accuracy_score(y_test, y_pred)
+        
+        # AUC-ROC: Area under Receiver Operating Characteristic curve
+        # Measures how well model ranks positive examples above negative
+        # 0.5 = random guessing, 1.0 = perfect ranking
         auc = roc_auc_score(y_test, y_prob)
         
-        # Cross-validation
+        # K-Fold Cross-Validation (K=5)
+        # Splits training data into 5 folds, trains on 4, validates on 1
+        # Repeats 5 times, each fold used as validation once
+        # Returns array of 5 accuracy scores
         cv_scores = cross_val_score(model, X_train, y_train, cv=5, scoring='accuracy')
         
         results[name] = {
             'model': model,
             'accuracy': accuracy,
             'auc': auc,
-            'cv_mean': cv_scores.mean(),
-            'cv_std': cv_scores.std()
+            'cv_mean': cv_scores.mean(),  # Average CV accuracy
+            'cv_std': cv_scores.std()     # Standard deviation (measures stability)
         }
         
         print(f"  Accuracy: {accuracy:.4f}")

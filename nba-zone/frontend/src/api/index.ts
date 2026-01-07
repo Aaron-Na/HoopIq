@@ -73,6 +73,32 @@ export interface TeamStats {
   games_played: number;
 }
 
+export interface PlayerStats {
+  player_id: number;
+  name: string;
+  team_abbr: string;
+  team_name: string;
+  position: string;
+  jersey: string;
+  height: string;
+  weight: string;
+  age: string;
+  experience: string;
+  season: string;
+  games_played: number;
+  games_started: number;
+  minutes: number;
+  ppg: number;
+  rpg: number;
+  apg: number;
+  spg: number;
+  bpg: number;
+  fg_pct: number;
+  fg3_pct: number;
+  ft_pct: number;
+  turnovers: number;
+}
+
 export const api = {
   // Teams
   async getTeams(conference?: string, search?: string): Promise<Team[]> {
@@ -128,6 +154,19 @@ export const api = {
   async getTeamStats(): Promise<TeamStats[]> {
     const response = await fetch(`${API_BASE_URL}/schedule/team-stats`);
     if (!response.ok) throw new Error('Failed to fetch team stats');
+    return response.json();
+  },
+
+  // Player Stats
+  async getPlayerStats(): Promise<PlayerStats[]> {
+    const response = await fetch(`${API_BASE_URL}/schedule/players`);
+    if (!response.ok) throw new Error('Failed to fetch player stats');
+    return response.json();
+  },
+
+  async getPlayersByTeam(teamAbbr: string): Promise<PlayerStats[]> {
+    const response = await fetch(`${API_BASE_URL}/schedule/players/${teamAbbr}`);
+    if (!response.ok) throw new Error('Failed to fetch team players');
     return response.json();
   },
 };

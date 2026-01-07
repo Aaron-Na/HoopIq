@@ -3,6 +3,7 @@ import { Box } from '@mui/material'
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import TeamsPage from './pages/TeamsPage'
+import TeamDetailPage from './pages/TeamDetailPage'
 import PlayersPage from './pages/PlayersPage'
 import PredictionsPage from './pages/PredictionsPage'
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/teams" element={<TeamsPage />} />
+          <Route path="/teams/:teamAbbr" element={<TeamDetailPage />} />
           <Route path="/players" element={<PlayersPage />} />
           <Route path="/predictions" element={<PredictionsPage />} />
         </Routes>

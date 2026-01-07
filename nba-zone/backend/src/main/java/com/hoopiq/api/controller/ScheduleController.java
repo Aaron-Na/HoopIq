@@ -67,6 +67,54 @@ public class ScheduleController {
         }
     }
 
+    @GetMapping("/players")
+    public ResponseEntity<List<Map<String, Object>>> getPlayerStats() {
+        try {
+            File playersFile = dataDir.resolve("players/top10_player_stats.json").toFile();
+            
+            if (playersFile.exists()) {
+                List<Map<String, Object>> players = objectMapper.readValue(
+                    playersFile, 
+                    new TypeReference<List<Map<String, Object>>>() {}
+                );
+                return ResponseEntity.ok(players);
+            } else {
+                return ResponseEntity.ok(new ArrayList<>());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return ResponseEntity.ok(new ArrayList<>());
+        }
+    }
+
+    @GetMapping("/players/{teamAbbr}")
+    public ResponseEntity<List<Map<String, Object>>> getPlayersByTeam(@PathVariable String teamAbbr) {
+        try {
+            File playersFile = dataDir.resolve("players/top10_player_stats.json").toFile();
+            
+            if (playersFile.exists()) {
+                List<Map<String, Object>> allPlayers = objectMapper.readValue(
+                    playersFile, 
+                    new TypeReference<List<Map<String, Object>>>() {}
+                );
+                
+                // Filter by team
+                List<Map<String, Object>> teamPlayers = new ArrayList<>();
+                for (Map<String, Object> player : allPlayers) {
+                    if (teamAbbr.equalsIgnoreCase((String) player.get("team_abbr"))) {
+                        teamPlayers.add(player);
+                    }
+                }
+                return ResponseEntity.ok(teamPlayers);
+            } else {
+                return ResponseEntity.ok(new ArrayList<>());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return ResponseEntity.ok(new ArrayList<>());
+        }
+    }
+
     private List<Map<String, Object>> parseCsvToList(File csvFile) throws IOException {
         List<Map<String, Object>> result = new ArrayList<>();
         java.util.Scanner scanner = new java.util.Scanner(csvFile);

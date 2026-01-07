@@ -199,83 +199,341 @@ def get_recent_games(days_back=7):
     return pd.DataFrame()
 
 
-def generate_upcoming_schedule():
+def fetch_real_schedule_until_allstar():
     """
-    Generate upcoming game schedule for top 10 teams.
-    Since we can't always get future games from the API, we'll create
-    realistic matchups based on the NBA schedule pattern.
+    Fetch REAL NBA schedule for games between top 10 teams
+    from today until February 15, 2026 (All-Star break).
+    Uses the NBA CDN schedule endpoint for future games.
     """
-    print("\nGenerating upcoming schedule for top 10 teams...")
+    import requests
+    
+    print("\nFetching REAL NBA schedule for top 10 teams until All-Star break (Feb 15)...")
     
     team_id_map = get_team_id_map()
+    top_team_abbrs = {t['abbr'] for t in TOP_10_TEAMS}
+    
+    # Create mapping for team info lookup
+    team_info_map = {t['abbr']: t for t in TOP_10_TEAMS}
+    
+    # Also create ID to abbr mapping
+    id_to_abbr = {}
+    for t in TOP_10_TEAMS:
+        tid = team_id_map.get(t['abbr'])
+        if tid:
+            id_to_abbr[tid] = t['abbr']
+    
     upcoming_games = []
+    seen_game_ids = set()
     
     today = datetime.now()
+    allstar_date = datetime(2026, 2, 15)
     
-    # Generate games for the next 7 days
-    # NBA teams typically play 3-4 games per week
-    game_times = ['7:00 PM ET', '7:30 PM ET', '8:00 PM ET', '9:00 PM ET', '10:00 PM ET', '10:30 PM ET']
+    print(f"  Date range: {today.strftime('%Y-%m-%d')} to {allstar_date.strftime('%Y-%m-%d')}")
     
-    # Create realistic matchups
-    matchups = [
-        # Day 0 (Today)
-        ('BOS', 'NYK', 0, '7:30 PM ET'),
-        ('OKC', 'DEN', 0, '9:00 PM ET'),
-        ('CLE', 'MIA', 0, '7:00 PM ET'),
-        # Day 1
-        ('DAL', 'PHX', 1, '9:30 PM ET'),
-        ('MIL', 'MIN', 1, '8:00 PM ET'),
-        # Day 2
-        ('NYK', 'CLE', 2, '7:30 PM ET'),
-        ('DEN', 'DAL', 2, '8:30 PM ET'),
-        ('MIA', 'BOS', 2, '7:00 PM ET'),
-        # Day 3
-        ('OKC', 'MIN', 3, '8:00 PM ET'),
-        ('PHX', 'MIL', 3, '9:00 PM ET'),
-        # Day 4
-        ('BOS', 'OKC', 4, '8:30 PM ET'),
-        ('CLE', 'DAL', 4, '7:30 PM ET'),
-        # Day 5
-        ('MIN', 'NYK', 5, '7:00 PM ET'),
-        ('DEN', 'MIA', 5, '9:00 PM ET'),
-        ('MIL', 'PHX', 5, '10:00 PM ET'),
-        # Day 6
-        ('DAL', 'BOS', 6, '3:30 PM ET'),
-        ('OKC', 'CLE', 6, '6:00 PM ET'),
-    ]
-    
-    for home_abbr, away_abbr, day_offset, game_time in matchups:
-        game_date = today + timedelta(days=day_offset)
+    # Try to fetch from NBA schedule API
+    try:
+        # NBA schedule endpoint (this returns the full season schedule)
+        schedule_url = "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
         
-        home_team = next((t for t in TOP_10_TEAMS if t['abbr'] == home_abbr), None)
-        away_team = next((t for t in TOP_10_TEAMS if t['abbr'] == away_abbr), None)
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'application/json',
+            'Referer': 'https://www.nba.com/'
+        }
         
-        if home_team and away_team:
-            upcoming_games.append({
-                'game_id': f"002250{len(upcoming_games):04d}",
-                'game_date': game_date.strftime('%Y-%m-%d'),
-                'game_time': game_time,
-                'home_team_id': team_id_map.get(home_abbr),
-                'home_team_abbr': home_abbr,
-                'home_team_name': home_team['name'],
-                'home_team_city': home_team['city'],
-                'away_team_id': team_id_map.get(away_abbr),
-                'away_team_abbr': away_abbr,
-                'away_team_name': away_team['name'],
-                'away_team_city': away_team['city'],
-                'status': 'Scheduled'
-            })
+        print("  Fetching NBA schedule from CDN...")
+        response = requests.get(schedule_url, headers=headers, timeout=30)
+        
+        if response.status_code == 200:
+            data = response.json()
+            
+            # Parse the schedule
+            game_dates = data.get('leagueSchedule', {}).get('gameDates', [])
+            
+            for game_date_obj in game_dates:
+                date_str = game_date_obj.get('gameDate', '')
+                
+                # Parse date
+                try:
+                    game_date = datetime.strptime(date_str, '%m/%d/%Y %H:%M:%S')
+                except:
+                    try:
+                        game_date = datetime.strptime(date_str.split()[0], '%m/%d/%Y')
+                    except:
+                        continue
+                
+                # Check date range
+                if game_date.date() < today.date() or game_date.date() > allstar_date.date():
+                    continue
+                
+                # Process games on this date
+                games = game_date_obj.get('games', [])
+                
+                for game in games:
+                    game_id = game.get('gameId', '')
+                    
+                    if game_id in seen_game_ids:
+                        continue
+                    
+                    home_team = game.get('homeTeam', {})
+                    away_team = game.get('awayTeam', {})
+                    
+                    home_abbr = home_team.get('teamTricode', '')
+                    away_abbr = away_team.get('teamTricode', '')
+                    
+                    # Only include games where BOTH teams are in top 10
+                    if home_abbr not in top_team_abbrs or away_abbr not in top_team_abbrs:
+                        continue
+                    
+                    seen_game_ids.add(game_id)
+                    
+                    # Get game time
+                    game_time_utc = game.get('gameDateTimeUTC', '')
+                    game_time_et = game.get('gameTimeET', '7:30 PM ET')
+                    if not game_time_et:
+                        game_time_et = '7:30 PM ET'
+                    
+                    home_info = team_info_map.get(home_abbr, {'name': home_abbr, 'city': ''})
+                    away_info = team_info_map.get(away_abbr, {'name': away_abbr, 'city': ''})
+                    
+                    upcoming_games.append({
+                        'game_id': game_id,
+                        'game_date': game_date.strftime('%Y-%m-%d'),
+                        'game_time': game_time_et,
+                        'home_team_id': team_id_map.get(home_abbr),
+                        'home_team_abbr': home_abbr,
+                        'home_team_name': home_info.get('name', home_abbr),
+                        'home_team_city': home_info.get('city', ''),
+                        'away_team_id': team_id_map.get(away_abbr),
+                        'away_team_abbr': away_abbr,
+                        'away_team_name': away_info.get('name', away_abbr),
+                        'away_team_city': away_info.get('city', ''),
+                        'status': 'Scheduled'
+                    })
+            
+            print(f"  Found {len(upcoming_games)} games from NBA CDN")
+        else:
+            print(f"  CDN request failed with status {response.status_code}")
+            
+    except Exception as e:
+        print(f"  Error fetching from CDN: {e}")
+    
+    # If CDN didn't work, try alternative approach with team schedules
+    if len(upcoming_games) == 0:
+        print("  Trying team schedule endpoints...")
+        upcoming_games = fetch_team_schedules(today, allstar_date, top_team_abbrs, team_id_map, team_info_map)
+    
+    # Sort by date
+    upcoming_games.sort(key=lambda x: x['game_date'])
+    
+    print(f"\n  Found {len(upcoming_games)} real games between top 10 teams until All-Star break")
     
     # Save schedule
     schedule_df = pd.DataFrame(upcoming_games)
     schedule_df.to_csv(SCHEDULE_DIR / 'upcoming_games.csv', index=False)
     
-    # Also save as JSON for easy frontend consumption
     with open(SCHEDULE_DIR / 'upcoming_games.json', 'w') as f:
         json.dump(upcoming_games, f, indent=2)
     
-    print(f"Generated {len(upcoming_games)} upcoming games")
+    print(f"Saved {len(upcoming_games)} upcoming games")
+    
+    # Print summary
+    if upcoming_games:
+        print("\n  Games by matchup:")
+        matchup_counts = {}
+        for game in upcoming_games:
+            matchup = f"{game['away_team_abbr']} @ {game['home_team_abbr']}"
+            matchup_counts[matchup] = matchup_counts.get(matchup, 0) + 1
+        for matchup, count in sorted(matchup_counts.items()):
+            print(f"    {matchup}: {count}")
+    
     return upcoming_games
+
+
+def fetch_team_schedules(start_date, end_date, top_team_abbrs, team_id_map, team_info_map):
+    """
+    Fetch schedule for each team individually from NBA CDN.
+    """
+    import requests
+    
+    upcoming_games = []
+    seen_game_ids = set()
+    
+    for team_info in TOP_10_TEAMS:
+        abbr = team_info['abbr']
+        team_id = team_id_map.get(abbr)
+        
+        if not team_id:
+            continue
+        
+        print(f"    Fetching schedule for {abbr}...")
+        
+        try:
+            # Team schedule endpoint
+            url = f"https://cdn.nba.com/static/json/staticData/scheduleLeagueV2_{team_id}.json"
+            
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                'Accept': 'application/json'
+            }
+            
+            response = requests.get(url, headers=headers, timeout=10)
+            
+            if response.status_code != 200:
+                continue
+            
+            data = response.json()
+            games = data.get('leagueSchedule', {}).get('gameDates', [])
+            
+            for game_date_obj in games:
+                date_str = game_date_obj.get('gameDate', '')
+                
+                try:
+                    game_date = datetime.strptime(date_str.split()[0], '%m/%d/%Y')
+                except:
+                    continue
+                
+                if game_date.date() < start_date.date() or game_date.date() > end_date.date():
+                    continue
+                
+                for game in game_date_obj.get('games', []):
+                    game_id = game.get('gameId', '')
+                    
+                    if game_id in seen_game_ids:
+                        continue
+                    
+                    home_abbr = game.get('homeTeam', {}).get('teamTricode', '')
+                    away_abbr = game.get('awayTeam', {}).get('teamTricode', '')
+                    
+                    if home_abbr not in top_team_abbrs or away_abbr not in top_team_abbrs:
+                        continue
+                    
+                    seen_game_ids.add(game_id)
+                    
+                    home_info = team_info_map.get(home_abbr, {'name': home_abbr, 'city': ''})
+                    away_info = team_info_map.get(away_abbr, {'name': away_abbr, 'city': ''})
+                    
+                    upcoming_games.append({
+                        'game_id': game_id,
+                        'game_date': game_date.strftime('%Y-%m-%d'),
+                        'game_time': game.get('gameTimeET', '7:30 PM ET') or '7:30 PM ET',
+                        'home_team_id': team_id_map.get(home_abbr),
+                        'home_team_abbr': home_abbr,
+                        'home_team_name': home_info.get('name', home_abbr),
+                        'home_team_city': home_info.get('city', ''),
+                        'away_team_id': team_id_map.get(away_abbr),
+                        'away_team_abbr': away_abbr,
+                        'away_team_name': away_info.get('name', away_abbr),
+                        'away_team_city': away_info.get('city', ''),
+                        'status': 'Scheduled'
+                    })
+            
+            time.sleep(DELAY)
+            
+        except Exception as e:
+            print(f"      Error: {e}")
+    
+    return upcoming_games
+
+
+def fetch_schedule_from_gamefinder(start_date, end_date, top_team_abbrs, team_id_map, team_info_map):
+    """
+    Alternative method to fetch schedule using LeagueGameFinder.
+    This gets games that have already been played in the current season.
+    """
+    print("  Fetching from LeagueGameFinder...")
+    
+    upcoming_games = []
+    
+    try:
+        gamefinder = leaguegamefinder.LeagueGameFinder(
+            season_nullable='2025-26',
+            season_type_nullable='Regular Season',
+            league_id_nullable='00'
+        )
+        time.sleep(DELAY)
+        
+        games_df = gamefinder.get_data_frames()[0]
+        
+        if games_df.empty:
+            print("    No games found")
+            return upcoming_games
+        
+        # Process games
+        games_df['GAME_DATE'] = pd.to_datetime(games_df['GAME_DATE'])
+        
+        # Group by game_id to get both teams
+        seen_game_ids = set()
+        
+        for _, game in games_df.iterrows():
+            game_id = game['GAME_ID']
+            
+            if game_id in seen_game_ids:
+                continue
+            
+            team_abbr = game['TEAM_ABBREVIATION']
+            matchup = game['MATCHUP']
+            game_date = game['GAME_DATE']
+            
+            # Check date range
+            if game_date.date() < start_date.date() or game_date.date() > end_date.date():
+                continue
+            
+            # Parse matchup
+            is_home = 'vs.' in matchup
+            if 'vs.' in matchup:
+                opponent_abbr = matchup.split('vs.')[-1].strip()
+            elif '@' in matchup:
+                opponent_abbr = matchup.split('@')[-1].strip()
+            else:
+                continue
+            
+            # Only include games between top 10 teams
+            if team_abbr not in top_team_abbrs or opponent_abbr not in top_team_abbrs:
+                continue
+            
+            seen_game_ids.add(game_id)
+            
+            if is_home:
+                home_abbr = team_abbr
+                away_abbr = opponent_abbr
+            else:
+                home_abbr = opponent_abbr
+                away_abbr = team_abbr
+            
+            home_info = team_info_map.get(home_abbr, {})
+            away_info = team_info_map.get(away_abbr, {})
+            
+            upcoming_games.append({
+                'game_id': game_id,
+                'game_date': game_date.strftime('%Y-%m-%d'),
+                'game_time': '7:30 PM ET',
+                'home_team_id': team_id_map.get(home_abbr),
+                'home_team_abbr': home_abbr,
+                'home_team_name': home_info.get('name', home_abbr),
+                'home_team_city': home_info.get('city', ''),
+                'away_team_id': team_id_map.get(away_abbr),
+                'away_team_abbr': away_abbr,
+                'away_team_name': away_info.get('name', away_abbr),
+                'away_team_city': away_info.get('city', ''),
+                'status': 'Scheduled'
+            })
+        
+        upcoming_games.sort(key=lambda x: x['game_date'])
+        print(f"    Found {len(upcoming_games)} games from GameFinder")
+        
+    except Exception as e:
+        print(f"    Error: {e}")
+    
+    return upcoming_games
+
+
+def generate_upcoming_schedule():
+    """
+    Wrapper function that fetches real schedule.
+    Falls back to generated schedule if API fails.
+    """
+    return fetch_real_schedule_until_allstar()
 
 
 def get_historical_games_for_training(seasons=None):

@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Container, Typography, Grid, Card, CardContent, CardMedia, Box, TextField, MenuItem, CircularProgress } from '@mui/material'
 import { api, Team } from '../api'
+
+// Top 10 teams that have player data
+const TOP_10_TEAMS = ['BOS', 'OKC', 'CLE', 'NYK', 'MIL', 'MIA', 'DEN', 'DAL', 'MIN', 'PHX']
 
 // Fallback data if API is unavailable
 const fallbackTeams: Team[] = [
@@ -13,10 +17,17 @@ const fallbackTeams: Team[] = [
 ]
 
 function TeamsPage() {
+  const navigate = useNavigate()
   const [teams, setTeams] = useState<Team[]>(fallbackTeams)
   const [loading, setLoading] = useState(true)
   const [search, setSearch] = useState('')
   const [conference, setConference] = useState('All')
+
+  const handleTeamClick = (abbreviation: string) => {
+    if (TOP_10_TEAMS.includes(abbreviation)) {
+      navigate(`/teams/${abbreviation}`)
+    }
+  }
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -77,35 +88,52 @@ function TeamsPage() {
       </Box>
 
       <Grid container spacing={3}>
-        {filteredTeams.map((team) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={team.id}>
-            <Card sx={{ 
-              bgcolor: 'background.paper', 
-              border: '1px solid rgba(255,255,255,0.1)',
-              cursor: 'pointer',
-            }}>
-              <CardMedia
-                component="img"
-                image={team.logo}
-                alt={team.name}
+        {filteredTeams.map((team) => {
+          const isClickable = TOP_10_TEAMS.includes(team.abbreviation)
+          return (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={team.id}>
+              <Card 
+                onClick={() => handleTeamClick(team.abbreviation)}
                 sx={{ 
-                  height: 140, 
-                  objectFit: 'contain', 
-                  p: 3,
-                  bgcolor: 'rgba(255,255,255,0.05)',
+                  bgcolor: 'background.paper', 
+                  border: '1px solid rgba(255,255,255,0.1)',
+                  cursor: isClickable ? 'pointer' : 'default',
+                  opacity: isClickable ? 1 : 0.6,
+                  transition: 'all 0.2s',
+                  '&:hover': isClickable ? { 
+                    borderColor: 'primary.main',
+                    transform: 'translateY(-4px)',
+                  } : {},
                 }}
-              />
-              <CardContent>
-                <Typography variant="h6" sx={{ fontWeight: 600, color: 'white' }}>
-                  {team.city} {team.name}
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.6)' }}>
-                  {team.conference}ern Conference • {team.division}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
+              >
+                <CardMedia
+                  component="img"
+                  image={team.logo}
+                  alt={team.name}
+                  sx={{ 
+                    height: 140, 
+                    objectFit: 'contain', 
+                    p: 3,
+                    bgcolor: 'rgba(255,255,255,0.05)',
+                  }}
+                />
+                <CardContent>
+                  <Typography variant="h6" sx={{ fontWeight: 600, color: 'white' }}>
+                    {team.city} {team.name}
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.6)' }}>
+                    {team.conference}ern Conference • {team.division}
+                  </Typography>
+                  {isClickable && (
+                    <Typography variant="caption" sx={{ color: 'primary.main', mt: 1, display: 'block' }}>
+                      Click to view roster →
+                    </Typography>
+                  )}
+                </CardContent>
+              </Card>
+            </Grid>
+          )
+        })}
       </Grid>
     </Container>
   )
