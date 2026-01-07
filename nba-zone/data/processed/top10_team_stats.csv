@@ -1,0 +1,11 @@
+team_id,abbr,name,city,conference,wins,losses,win_pct,ppg,opp_ppg,fg_pct,fg3_pct,rpg,apg,games_played
+1610612738,BOS,Celtics,Boston,East,0,0,0.7,120.5,110.2,47.5,37.0,44.0,26.0,0
+1610612760,OKC,Thunder,Oklahoma City,West,0,0,0.68,118.8,109.5,47.5,37.0,44.0,26.0,0
+1610612739,CLE,Cavaliers,Cleveland,East,0,0,0.66,116.2,108.8,47.5,37.0,44.0,26.0,0
+1610612743,DEN,Nuggets,Denver,West,0,0,0.64,117.5,111.2,47.5,37.0,44.0,26.0,0
+1610612752,NYK,Knicks,New York,East,0,0,0.62,115.8,110.5,47.5,37.0,44.0,26.0,0
+1610612742,DAL,Mavericks,Dallas,West,0,0,0.6,118.2,113.1,47.5,37.0,44.0,26.0,0
+1610612749,MIL,Bucks,Milwaukee,East,0,0,0.58,119.5,114.2,47.5,37.0,44.0,26.0,0
+1610612750,MIN,Timberwolves,Minnesota,West,0,0,0.56,112.8,108.5,47.5,37.0,44.0,26.0,0
+1610612756,PHX,Suns,Phoenix,West,0,0,0.55,116.5,113.8,47.5,37.0,44.0,26.0,0
+1610612748,MIA,Heat,Miami,East,0,0,0.54,111.2,109.5,47.5,37.0,44.0,26.0,0

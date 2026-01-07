@@ -1,0 +1,527 @@
+team_id,player_id,player_name,nickname,jersey_number,position,height,weight,birth_date,age,years_experience,college
+1610612737,1630552,Jalen Johnson,Jalen,1,F,6-8,219,"DEC 18, 2001",24.0,4,Duke
+1610612737,1630811,Keaton Wallace,Keaton,2,G,6-3,185,"FEB 26, 1999",26.0,1,Texas-San Antonio
+1610612737,1628379,Luke Kennard,Luke,3,G,6-5,206,"JUN 24, 1996",29.0,8,Duke
+1610612737,1630700,Dyson Daniels,Dyson,5,G,6-7,199,"MAR 17, 2003",22.0,3,NBA G League Ignite
+1610612737,1629638,Nickeil Alexander-Walker,Nickeil,7,G,6-5,205,"SEP 02, 1998",27.0,6,Virginia Tech
+1610612737,204001,Kristaps Porziņģis,Kristaps,8,F-C,7-2,240,"AUG 02, 1995",30.0,10,Cajasol Sevilla
+1610612737,1642258,Zaccharie Risacher,Zaccharie,10,F,6-8,200,"APR 08, 2005",20.0,1,JL Bourg-en-Bresse
+1610612737,1629027,Trae Young,Trae,11,G,6-2,164,"SEP 19, 1998",27.0,7,Oklahoma
+1610612737,1642368,N'Faly Dante,N'Faly,12,C,6-11,230,"OCT 19, 2001",24.0,1,Oregon
+1610612737,1642854,Asa Newell,Asa,14,F,6-10,220,"OCT 05, 2005",20.0,R,Georgia
+1610612737,1630168,Onyeka Okongwu,Onyeka,17,F-C,6-10,240,"DEC 11, 2000",25.0,5,Southern California
+1610612737,1631243,Mouhamed Gueye,Mouhamed,18,F,6-11,210,"NOV 09, 2002",23.0,2,Washington State
+1610612737,1642365,Nikola Đurišić,Nikola,22,G,6-8,214,"FEB 23, 2004",21.0,R,Mega Basket
+1610612737,1630249,Vít Krejčí,Vít,27,G,6-8,195,"JUN 19, 2000",25.0,4,Zaragoza
+1610612737,1642947,Eli John Ndiaye,Eli John,30,F,6-8,209,"JUN 26, 2004",21.0,R,Real Madrid
+1610612737,1631216,Caleb Houstan,Caleb,33,G,6-8,205,"JAN 09, 2003",22.0,3,Michigan
+1610612738,1628369,Jayson Tatum,Jayson,0,F-G,6-8,210,"MAR 03, 1998",27.0,8,Duke
+1610612738,1629014,Anfernee Simons,Anfernee,4,G,6-3,200,"JUN 08, 1999",26.0,7,Edgewater HS (FL)
+1610612738,1627759,Jaylen Brown,Jaylen,7,G-F,6-6,223,"OCT 24, 1996",29.0,9,California
+1610612738,1631169,Josh Minott,Josh,8,F,6-8,205,"NOV 25, 2002",23.0,3,Memphis
+1610612738,1628401,Derrick White,Derrick,9,G,6-4,190,"JUL 02, 1994",31.0,8,Colorado
+1610612738,1630202,Payton Pritchard,Payton,11,G,6-1,195,"JAN 28, 1998",27.0,5,Oregon
+1610612738,1631199,Ron Harper Jr.,Ron,13,G-F,6-5,233,"APR 12, 2000",25.0,3,Rutgers
+1610612738,1630214,Xavier Tillman,Xavier,26,F,6-8,245,"JAN 12, 1999",26.0,5,Michigan State
+1610612738,1641775,Jordan Walsh,Jordan,27,G,6-6,205,"MAR 03, 2004",21.0,2,Arkansas
+1610612738,1642864,Hugo González,Hugo,28,G,6-6,200,"FEB 05, 2006",19.0,R,Real Madrid
+1610612738,1630573,Sam Hauser,Sam,30,F,6-7,217,"DEC 08, 1997",28.0,4,Virginia
+1610612738,1642917,Max Shulga,Max,44,G,6-4,210,"JUN 25, 2002",23.0,R,Virginia Commonwealth
+1610612738,1630568,Luka Garza,Luka,52,C,6-10,243,"DEC 27, 1998",26.0,4,Iowa
+1610612738,1631248,Baylor Scheierman,Baylor,55,G,6-6,205,"SEP 26, 2000",25.0,1,Creighton
+1610612738,1642873,Amari Williams,Amari,77,F-C,6-11,250,"JAN 28, 2002",23.0,R,Kentucky
+1610612738,1629674,Neemias Queta,Neemias,88,C,7-0,248,"JUL 13, 1999",26.0,4,Utah State
+1610612738,1628449,Chris Boucher,Chris,99,F,6-8,200,"JAN 11, 1993",32.0,8,Oregon
+1610612739,1629622,Max Strus,Max,1,G-F,6-5,215,"MAR 28, 1996",29.0,6,DePaul
+1610612739,1628366,Lonzo Ball,Lonzo,2,G,6-5,190,"OCT 27, 1997",28.0,8,UCLA
+1610612739,1628418,Thomas Bryant,Thomas,3,C-F,6-9,248,"JUL 31, 1997",28.0,8,Indiana
+1610612739,1630596,Evan Mobley,Evan,4,C,6-11,215,"JUN 18, 2001",24.0,4,Southern California
+1610612739,1630241,Sam Merrill,Sam,5,G,6-4,205,"MAY 15, 1996",29.0,5,Utah State
+1610612739,1641753,Chris Livingston,Chris,8,F,6-6,220,"OCT 15, 2003",22.0,2,Kentucky
+1610612739,1641854,Craig Porter Jr.,Craig,9,G,6-1,180,"FEB 26, 2000",25.0,2,Wichita State
+1610612739,1629636,Darius Garland,Darius,10,G,6-1,192,"JAN 26, 2000",25.0,6,Vanderbilt
+1610612739,1629631,De'Andre Hunter,De'Andre,12,F-G,6-7,221,"DEC 02, 1997",28.0,6,Virginia
+1610612739,1642281,Jaylon Tyson,Jaylon,20,G-F,6-6,215,"DEC 02, 2002",23.0,1,California
+1610612739,1626204,Larry Nance Jr.,Larry,22,F-C,6-6,245,"JAN 01, 1993",32.0,10,Wyoming
+1610612739,1642878,Tyrese Proctor,Tyrese,24,G,6-4,185,"APR 01, 2004",21.0,R,Duke
+1610612739,1628386,Jarrett Allen,Jarrett,31,C,6-9,243,"APR 21, 1998",27.0,8,Texas
+1610612739,1629731,Dean Wade,Dean,32,F-C,6-9,228,"NOV 20, 1996",29.0,6,Kansas State
+1610612739,1631247,Luke Travers,Luke,33,F,6-6,207,"SEP 03, 2001",24.0,1,Rockingham Flames (Aus.)
+1610612739,1641772,Nae'Qwan Tomlin,Nae'Qwan,35,F,6-8,210,"DEC 19, 2000",25.0,1,Memphis
+1610612739,1628378,Donovan Mitchell,Donovan,45,G,6-2,215,"SEP 07, 1996",29.0,8,Louisville
+1610612740,1642847,Jeremiah Fears,Jeremiah,0,G,6-3,190,"OCT 14, 2006",19.0,R,Oklahoma
+1610612740,1629627,Zion Williamson,Zion,1,F,6-6,284,"JUL 06, 2000",25.0,6,Duke
+1610612740,1630529,Herbert Jones,Herbert,2,F,6-7,206,"OCT 06, 1998",27.0,4,Alabama
+1610612740,1629673,Jordan Poole,Jordan,3,G,6-4,194,"JUN 19, 1999",26.0,6,Michigan
+1610612740,1630621,Hunter Dickinson,Hunter,4,C,7-1,255,"NOV 25, 2000",25.0,R,Kansas
+1610612740,1627749,Dejounte Murray,Dejounte,5,G,6-4,180,"SEP 19, 1996",29.0,9,Washington
+1610612740,201599,DeAndre Jordan,DeAndre,9,C,6-11,265,"JUL 21, 1988",37.0,17,Texas A&M
+1610612740,1631121,Bryce McGowens,Bryce,11,G,6-6,190,"NOV 08, 2002",23.0,3,Nebraska
+1610612740,1642877,Micah Peavy,Micah,14,G-F,6-7,215,"JUL 16, 2001",24.0,R,Georgetown
+1610612740,1630631,Jose Alvarado,Jose,15,G,6-0,179,"APR 12, 1998",27.0,4,Georgia Tech
+1610612740,1631255,Karlo Matković,Karlo,17,F-C,6-10,231,"MAR 30, 2001",24.0,1,Mega Basket
+1610612740,1642274,Yves Missi,Yves,21,C,6-11,235,"MAY 14, 2004",21.0,1,Baylor
+1610612740,1642852,Derik Queen,Derik,22,C,6-9,250,"DEC 27, 2004",20.0,R,Maryland
+1610612740,1641725,Trey Alexander,Trey,23,G,6-5,185,"MAY 02, 2003",22.0,1,Creighton
+1610612740,1641722,Jordan Hawkins,Jordan,24,G,6-5,190,"APR 29, 2002",23.0,2,Connecticut
+1610612740,1630530,Trey Murphy III,Trey,25,F,6-8,206,"JUN 18, 2000",25.0,4,Virginia
+1610612740,1630180,Saddiq Bey,Saddiq,41,G-F,6-8,215,"APR 09, 1999",26.0,5,Villanova
+1610612740,1626172,Kevon Looney,Kevon,55,F,6-9,222,"FEB 06, 1996",29.0,10,UCLA
+1610612741,1642280,Trentyn Flowers,Trentyn,00,F,6-9,185,"MAR 08, 2005",20.0,1,Adelaide
+1610612741,1629632,Coby White,Coby,0,G,6-4,195,"FEB 16, 2000",25.0,6,North Carolina
+1610612741,1641801,Emanuel Miller,Emanuel,2,F,6-5,215,"JUN 19, 2000",25.0,1,TCU
+1610612741,1630581,Josh Giddey,Josh,3,G,6-7,216,"OCT 10, 2002",23.0,4,NBA Global Academy
+1610612741,1628975,Jevon Carter,Jevon,5,G,6-0,200,"SEP 14, 1995",30.0,7,West Virginia
+1610612741,1631207,Dalen Terry,Dalen,7,F,6-6,195,"JUL 12, 2002",23.0,3,Arizona
+1610612741,202696,Nikola Vučević,Nikola,9,C,6-9,260,"OCT 24, 1990",35.0,14,Southern California
+1610612741,1630245,Ayo Dosunmu,Ayo,11,G,6-4,200,"JAN 17, 2000",25.0,4,Illinois
+1610612741,1628380,Zach Collins,Zach,12,F-C,6-9,250,"NOV 19, 1997",28.0,8,Gonzaga
+1610612741,1628989,Kevin Huerter,Kevin,13,G-F,6-6,198,"AUG 27, 1998",27.0,7,Maryland
+1610612741,1641824,Matas Buzelis,Matas,14,F,6-8,209,"OCT 13, 2004",21.0,1,NBA G League Ignite
+1610612741,1641763,Julian Phillips,Julian,15,F,6-6,198,"NOV 05, 2003",22.0,2,Tennessee
+1610612741,1642855,Noa Essengue,Noa,24,F,6-8,200,"DEC 18, 2006",19.0,R,
+1610612741,1630188,Jalen Smith,Jalen,25,F-C,6-8,215,"MAR 16, 2000",25.0,5,Maryland
+1610612741,1630200,Tre Jones,Tre,30,G,6-1,185,"JAN 08, 2000",25.0,5,Duke
+1610612741,1630171,Isaac Okoro,Isaac,35,F-G,6-4,225,"JAN 26, 2001",24.0,5,Auburn
+1610612741,1630172,Patrick Williams,Patrick,44,F,6-6,215,"AUG 26, 2001",24.0,5,Florida State
+1610612741,1642950,Lachlan Olbrich,Lachlan,47,C,6-8,236,"DEC 30, 2003",21.0,R,Illawarra
+1610612742,203957,Danté Exum,Danté,0,G,6-5,214,"JUL 13, 1995",30.0,9,Australian Institute of Sport
+1610612742,1631108,Max Christie,Max,00,G,6-5,190,"FEB 10, 2003",22.0,3,Michigan State
+1610612742,1630702,Jaden Hardy,Jaden,1,G,6-3,198,"JUL 05, 2002",23.0,3,NBA G League Ignite
+1610612742,1641726,Dereck Lively II,Dereck,2,C,7-1,230,"FEB 12, 2004",21.0,2,Duke
+1610612742,203076,Anthony Davis,Anthony,3,F-C,6-10,253,"MAR 11, 1993",32.0,13,Kentucky
+1610612742,1626156,D'Angelo Russell,D'Angelo,5,G,6-3,193,"FEB 23, 1996",29.0,10,Ohio State
+1610612742,203939,Dwight Powell,Dwight,7,F-C,6-10,240,"JUL 20, 1991",34.0,11,Stanford
+1610612742,1642948,Ryan Nembhard,Ryan,9,G,5-11,180,"MAR 10, 2003",22.0,R,Gonzaga
+1610612742,1630314,Brandon Williams,Brandon,10,G,6-1,190,"NOV 22, 1999",26.0,3,Arizona
+1610612742,202681,Kyrie Irving,Kyrie,11,G,6-2,195,"MAR 23, 1992",33.0,14,Duke
+1610612742,1630230,Naji Marshall,Naji,13,F,6-6,220,"JAN 24, 1998",27.0,5,Xavier
+1610612742,1642939,Miles Kelly,Miles,14,G,6-4,190,"JAN 26, 2003",22.0,R,Auburn
+1610612742,1628997,Caleb Martin,Caleb,16,F,6-5,205,"SEP 28, 1995",30.0,6,Nevada
+1610612742,1629655,Daniel Gafford,Daniel,21,F-C,6-10,265,"OCT 01, 1998",27.0,6,Arkansas
+1610612742,1629023,P.J. Washington,P.J.,25,F,6-7,230,"AUG 23, 1998",27.0,6,Kentucky
+1610612742,1630619,Moussa Cisse,Moussa,30,C,6-11,220,"SEP 10, 2002",23.0,R,Memphis
+1610612742,202691,Klay Thompson,Klay,31,G,6-5,220,"FEB 08, 1990",35.0,14,Washington State
+1610612742,1642843,Cooper Flagg,Cooper,32,F,6-9,205,"DEC 21, 2006",19.0,R,Duke
+1610612743,1631128,Christian Braun,Christian,0,G,6-6,220,"APR 17, 2001",24.0,3,Kansas
+1610612743,1642938,Curtis Jones,Curtis,1,G,6-3,195,"OCT 04, 2001",24.0,R,Iowa State
+1610612743,1631124,Julian Strawther,Julian,3,G,6-6,205,"APR 18, 2002",23.0,2,Gonzaga
+1610612743,1641816,Hunter Tyson,Hunter,5,F,6-8,215,"JUN 13, 2000",25.0,2,Clemson
+1610612743,1642926,Tamar Bates,Tamar,7,G,6-4,195,"FEB 21, 2003",22.0,R,Missouri
+1610612743,1631212,Peyton Watson,Peyton,8,G,6-8,200,"SEP 11, 2002",23.0,3,UCLA
+1610612743,203501,Tim Hardaway Jr.,Tim,10,G-F,6-5,205,"MAR 16, 1992",33.0,12,Michigan
+1610612743,1628971,Bruce Brown,Bruce,11,G-F,6-4,202,"AUG 15, 1996",29.0,7,Miami
+1610612743,1641747,DaRon Holmes II,DaRon,14,F,6-9,225,"AUG 15, 2002",23.0,R,Dayton
+1610612743,203999,Nikola Jokić,Nikola,15,C,6-11,284,"FEB 19, 1995",30.0,10,Mega Basket
+1610612743,202685,Jonas Valančiūnas,Jonas,17,C,6-11,265,"MAY 06, 1992",33.0,13,Lietuvos rytas Vilnius
+1610612743,1642461,Spencer Jones,Spencer,21,F,6-7,225,"JUN 14, 2001",24.0,1,Stanford
+1610612743,1630192,Zeke Nnaji,Zeke,22,F-C,6-10,240,"JAN 09, 2001",24.0,5,Arizona
+1610612743,1629661,Cameron Johnson,Cameron,23,F,6-8,210,"MAR 03, 1996",29.0,6,North Carolina
+1610612743,1629618,Jalen Pickett,Jalen,24,G,6-2,202,"OCT 22, 1999",26.0,2,Penn State
+1610612743,1627750,Jamal Murray,Jamal,27,G,6-4,215,"FEB 23, 1997",28.0,9,Kentucky
+1610612743,203932,Aaron Gordon,Aaron,32,F,6-8,235,"SEP 16, 1995",30.0,11,Arizona
+1610612744,1627780,Gary Payton II,Gary,0,G,6-2,195,"DEC 01, 1992",33.0,9,Oregon State
+1610612744,1630228,Jonathan Kuminga,Jonathan,1,F,6-7,225,"OCT 06, 2002",23.0,4,NBA G League Ignite
+1610612744,1641764,Brandin Podziemski,Brandin,2,G,6-4,205,"FEB 25, 2003",22.0,2,Santa Clara
+1610612744,1642954,Will Richard,Will,3,G,6-3,206,"DEC 24, 2002",22.0,R,Florida
+1610612744,1630541,Moses Moody,Moses,4,G,6-5,211,"MAY 31, 2002",23.0,4,Arkansas
+1610612744,1627741,Buddy Hield,Buddy,7,G,6-4,220,"DEC 17, 1992",33.0,9,Oklahoma
+1610612744,1629001,De'Anthony Melton,De'Anthony,8,G,6-2,200,"MAY 28, 1998",27.0,7,Southern California
+1610612744,202710,Jimmy Butler III,Jimmy,10,F,6-6,230,"SEP 14, 1989",36.0,14,Marquette
+1610612744,1630611,Gui Santos,Gui,15,F,6-7,185,"JUN 22, 2002",23.0,2,Minas
+1610612744,1642502,Malevy Leons,Malevy,17,F,6-9,210,"SEP 23, 1999",26.0,1,Bradley
+1610612744,1643018,LJ Cryer,LJ,18,G,6-0,,"OCT 09, 2001",24.0,R,Houston
+1610612744,201143,Al Horford,Al,20,C-F,6-8,240,"JUN 03, 1986",39.0,18,Florida
+1610612744,1642366,Quinten Post,Quinten,21,C,7-0,238,"MAR 21, 2000",25.0,1,Boston College
+1610612744,203110,Draymond Green,Draymond,23,F,6-6,230,"MAR 04, 1990",35.0,13,Michigan State
+1610612744,201939,Stephen Curry,Stephen,30,G,6-2,185,"MAR 14, 1988",37.0,16,Davidson
+1610612744,203552,Seth Curry,Seth,31,G,6-1,185,"AUG 23, 1990",35.0,12,Duke
+1610612744,1631218,Trayce Jackson-Davis,Trayce,32,F,6-9,245,"FEB 22, 2000",25.0,2,Indiana
+1610612744,1630311,Pat Spencer,Pat,61,G,6-2,205,"JUL 04, 1996",29.0,2,Northwestern
+1610612745,1628988,Aaron Holiday,Aaron,0,G,6-0,185,"SEP 30, 1996",29.0,7,UCLA
+1610612745,1641708,Amen Thompson,Amen,1,G-F,6-7,200,"JAN 30, 2003",22.0,2,Overtime Elite
+1610612745,1627827,Dorian Finney-Smith,Dorian,2,F,6-7,220,"MAY 04, 1993",32.0,9,Florida
+1610612745,1631120,JD Davison,JD,4,G,6-1,195,"OCT 03, 2002",23.0,3,Alabama
+1610612745,1627832,Fred VanVleet,Fred,5,G,6-0,197,"FEB 25, 1994",31.0,9,Wichita State
+1610612745,201142,Kevin Durant,Kevin,7,F,6-11,240,"SEP 29, 1988",37.0,18,Texas
+1610612745,1630256,Jae'Sean Tate,Jae'Sean,8,F,6-4,230,"OCT 28, 1995",30.0,5,Ohio State
+1610612745,1631095,Jabari Smith Jr.,Jabari,10,F,6-11,220,"MAY 13, 2003",22.0,3,Auburn
+1610612745,203500,Steven Adams,Steven,12,C,6-11,265,"JUL 20, 1993",32.0,12,Pittsburgh
+1610612745,1642263,Reed Sheppard,Reed,15,G,6-2,185,"JUN 24, 2004",21.0,1,Kentucky
+1610612745,1631106,Tari Eason,Tari,17,F,6-8,215,"MAY 10, 2001",24.0,3,Louisiana State
+1610612745,1629006,Josh Okogie,Josh,20,G,6-4,213,"SEP 01, 1998",27.0,7,Georgia Tech
+1610612745,1641890,Tyler Smith,Tyler,21,F,6-9,224,"NOV 02, 2004",21.0,1,NBA G League Ignite
+1610612745,1642384,Isaiah Crawford,Isaiah,27,F,6-6,220,"NOV 01, 2001",24.0,1,Louisiana Tech
+1610612745,1630578,Alperen Sengun,Alperen,28,C,6-11,243,"JUL 25, 2002",23.0,4,Besiktas
+1610612745,203991,Clint Capela,Clint,30,C,6-10,256,"MAY 18, 1994",31.0,11,Elan Chalon
+1610612745,201145,Jeff Green,Jeff,32,F,6-8,235,"AUG 28, 1986",39.0,18,Georgetown
+1610612746,203078,Bradley Beal,Bradley,0,G,6-4,207,"JUN 28, 1993",32.0,13,Florida
+1610612746,201935,James Harden,James,1,G,6-5,220,"AUG 26, 1989",36.0,16,Arizona State
+1610612746,202695,Kawhi Leonard,Kawhi,2,F,6-6,225,"JUN 29, 1991",34.0,14,San Diego State
+1610612746,101108,Chris Paul,Chris,3,G,6-0,175,"MAY 06, 1985",40.0,20,Wake Forest
+1610612746,1642920,Kobe Sanders,Kobe,4,G,6-8,207,"MAY 30, 2002",23.0,R,Nevada
+1610612746,1627884,Derrick Jones Jr.,Derrick,5,F,6-6,210,"FEB 15, 1997",28.0,9,UNLV
+1610612746,1627739,Kris Dunn,Kris,8,G,6-3,205,"MAR 18, 1994",31.0,9,Providence
+1610612746,203992,Bogdan Bogdanović,Bogdan,10,G,6-5,225,"AUG 18, 1992",33.0,8,Fenerbahce
+1610612746,1642484,RayJ Dennis,RayJ,10,G,6-1,180,"MAR 30, 2001",24.0,1,Baylor
+1610612746,201572,Brook Lopez,Brook,11,C,7-1,282,"APR 01, 1988",37.0,17,Stanford
+1610612746,1642353,Cam Christie,Cam,12,G,6-5,190,"JUL 24, 2005",20.0,1,Minnesota
+1610612746,1642949,Yanic Konan Niederhäuser,Yanic Konan,14,C,6-11,242,"MAR 14, 2003",22.0,R,Penn State
+1610612746,1628381,John Collins,John,20,F-C,6-9,226,"SEP 23, 1997",28.0,8,Wake Forest
+1610612746,1641757,Jordan Miller,Jordan,22,G,6-5,194,"JAN 23, 2000",25.0,2,Miami
+1610612746,1641738,Kobe Brown,Kobe,24,F,6-7,250,"JAN 01, 2000",25.0,2,Missouri
+1610612746,201587,Nicolas Batum,Nicolas,33,G-F,6-7,230,"DEC 14, 1988",37.0,17,Le Mans
+1610612746,1627826,Ivica Zubac,Ivica,40,C,7-0,240,"MAR 18, 1997",28.0,9,Mega Basket
+1610612747,1642876,Adou Thiero,Adou,1,G,6-7,220,"MAY 08, 2004",21.0,R,Arkansas
+1610612747,1629020,Jarred Vanderbilt,Jarred,2,F,6-8,214,"APR 03, 1999",26.0,7,Kentucky
+1610612747,1642261,Dalton Knecht,Dalton,4,F,6-6,215,"APR 19, 2001",24.0,1,Tennessee
+1610612747,1629028,Deandre Ayton,Deandre,5,C,7-0,252,"JUL 23, 1998",27.0,7,Arizona
+1610612747,1629216,Gabe Vincent,Gabe,7,G,6-2,200,"JUN 14, 1996",29.0,6,California-Santa Barbara
+1610612747,1642355,Bronny James,Bronny,9,G,6-2,210,"OCT 06, 2004",21.0,1,Southern California
+1610612747,1629637,Jaxson Hayes,Jaxson,11,C-F,7-0,220,"MAY 23, 2000",25.0,6,Texas
+1610612747,1631222,Jake LaRavia,Jake,12,F,6-7,235,"NOV 03, 2001",24.0,3,Wake Forest
+1610612747,1628467,Maxi Kleber,Maxi,14,F,6-10,240,"JAN 29, 1992",33.0,8,Bayern Munich
+1610612747,1630559,Austin Reaves,Austin,15,G,6-5,197,"MAY 29, 1998",27.0,4,Oklahoma
+1610612747,1641733,Nick Smith Jr.,Nick,20,G,6-2,185,"APR 18, 2004",21.0,2,Arkansas
+1610612747,2544,LeBron James,LeBron,23,F,6-9,250,"DEC 30, 1984",40.0,22,St. Vincent-St. Mary HS (OH)
+1610612747,1631166,Drew Timme,Drew,26,F,6-9,235,"SEP 09, 2000",25.0,1,Gonzaga
+1610612747,1629060,Rui Hachimura,Rui,28,F,6-8,230,"FEB 08, 1998",27.0,6,Gonzaga
+1610612747,1643024,Chris Mañon,Chris,30,G,6-4,209,"DEC 09, 2001",24.0,R,Vanderbilt
+1610612747,203935,Marcus Smart,Marcus,36,G,6-3,220,"MAR 06, 1994",31.0,11,Oklahoma State
+1610612747,1629029,Luka Dončić,Luka,77,F-G,6-8,230,"FEB 28, 1999",26.0,7,Real Madrid
+1610612748,1631323,Simone Fontecchio,Simone,0,F,6-7,209,"DEC 09, 1995",30.0,3,Baskonia
+1610612748,1626179,Terry Rozier,Terry,2,G,6-1,190,"MAR 17, 1994",31.0,10,Louisville
+1610612748,1631107,Nikola Jović,Nikola,5,F,6-10,205,"JUN 09, 2003",22.0,3,Mega Basket
+1610612748,1642276,Kel'el Ware,Kel'el,7,C,7-0,230,"APR 20, 2004",21.0,1,Indiana
+1610612748,1641796,Pelle Larsson,Pelle,9,G,6-5,215,"FEB 23, 2001",24.0,1,Arizona
+1610612748,1631170,Jaime Jaquez Jr.,Jaime,11,G,6-6,225,"FEB 18, 2001",24.0,2,UCLA
+1610612748,1630696,Dru Smith,Dru,12,G,6-2,203,"DEC 30, 1997",27.0,3,Missouri
+1610612748,1628389,Bam Adebayo,Bam,13,C-F,6-9,255,"JUL 18, 1997",28.0,8,Kentucky
+1610612748,1629639,Tyler Herro,Tyler,14,G,6-5,195,"JAN 20, 2000",25.0,6,Kentucky
+1610612748,1642066,Myron Gardner,Myron,15,F,6-5,220,"MAY 21, 2001",24.0,R,Arkansas-Little Rock
+1610612748,1642352,Keshad Johnson,Keshad,16,F,6-6,225,"JUN 23, 2001",24.0,1,Arizona
+1610612748,1642443,Jahmir Young,Jahmir,17,G,6-0,185,"OCT 07, 2000",25.0,1,Maryland
+1610612748,203952,Andrew Wiggins,Andrew,22,F,6-6,197,"FEB 23, 1995",30.0,11,Kansas
+1610612748,1626181,Norman Powell,Norman,24,G,6-3,215,"MAY 25, 1993",32.0,10,UCLA
+1610612748,1642857,Kasparas Jakučionis,Kasparas,25,G,6-5,200,"MAY 29, 2006",19.0,R,Illinois-Urbana-Champaign
+1610612748,1630558,Davion Mitchell,Davion,45,G,6-0,202,"SEP 05, 1998",27.0,4,Baylor
+1610612748,1642884,Vladislav Goldin,Vladislav,50,C,7-0,250,"MAY 12, 2001",24.0,R,Michigan
+1610612749,1630579,Jericho Sims,Jericho,00,C,6-10,250,"OCT 20, 1998",27.0,4,Texas
+1610612749,1626167,Myles Turner,Myles,3,C-F,6-11,250,"MAR 24, 1996",29.0,10,Texas
+1610612749,1629018,Gary Trent Jr.,Gary,5,G,6-5,204,"JAN 18, 1999",26.0,7,Duke
+1610612749,1629645,Kevin Porter Jr.,Kevin,7,G-F,6-5,203,"MAY 04, 2000",25.0,5,Southern California
+1610612749,1626171,Bobby Portis,Bobby,9,F,6-9,250,"FEB 10, 1995",30.0,10,Arkansas
+1610612749,203914,Gary Harris,Gary,11,G,6-4,210,"SEP 14, 1994",31.0,11,Michigan State
+1610612749,1627752,Taurean Prince,Taurean,12,F,6-6,218,"MAR 22, 1994",31.0,9,Baylor
+1610612749,1631157,Ryan Rollins,Ryan,13,G,6-3,180,"JUL 03, 2002",23.0,3,Toledo
+1610612749,1629599,Amir Coffey,Amir,17,G-F,6-7,210,"JUN 17, 1997",28.0,6,Minnesota
+1610612749,1628398,Kyle Kuzma,Kyle,18,F,6-8,221,"JUL 24, 1995",30.0,8,Utah
+1610612749,1641813,Mark Sears,Mark,19,G,6-0,185,"FEB 19, 2002",23.0,R,Alabama
+1610612749,1631260,AJ Green,AJ,20,G,6-4,190,"SEP 27, 1999",26.0,3,Northern Iowa
+1610612749,1630828,Alex Antetokounmpo,Alex,29,F,6-8,214,"AUG 27, 2001",24.0,R,                                   
+1610612749,203507,Giannis Antetokounmpo,Giannis,34,F,6-11,243,"DEC 06, 1994",31.0,12,Filathlitikos
+1610612749,1631250,Pete Nance,Pete,35,F,6-9,225,"FEB 19, 2000",25.0,2,Northwestern
+1610612749,203648,Thanasis Antetokounmpo,Thanasis,43,F,6-7,219,"JUL 18, 1992",33.0,6,Panathinaikos
+1610612749,1641748,Andre Jackson Jr.,Andre,44,G,6-6,209,"NOV 13, 2001",24.0,2,Connecticut
+1610612749,1630175,Cole Anthony,Cole,50,G,6-2,185,"MAY 15, 2000",25.0,5,North Carolina
+1610612750,1628978,Donte DiVincenzo,Donte,0,G,6-4,203,"JAN 31, 1997",28.0,7,Villanova
+1610612750,1630545,Terrence Shannon Jr.,Terrence,1,G-F,6-6,215,"JUL 30, 2000",25.0,1,Illinois
+1610612750,1630183,Jaden McDaniels,Jaden,3,F,6-9,185,"SEP 29, 2000",25.0,5,Washington
+1610612750,1642265,Rob Dillingham,Rob,4,G,6-2,175,"JAN 04, 2005",20.0,1,Kentucky
+1610612750,1630162,Anthony Edwards,Anthony,5,G,6-4,225,"AUG 05, 2001",24.0,5,Georgia
+1610612750,204060,Joe Ingles,Joe,7,F-G,6-8,220,"OCT 02, 1987",38.0,11,Maccabi Tel Aviv
+1610612750,1630538,Bones Hyland,Bones,8,G,6-2,169,"SEP 14, 2000",25.0,4,Virginia Commonwealth
+1610612750,1630548,Johnny Juzang,Johnny,9,G,6-7,226,"MAR 17, 2001",24.0,3,UCLA
+1610612750,201144,Mike Conley,Mike,10,G,6-1,175,"OCT 11, 1987",38.0,18,Ohio State
+1610612750,1629675,Naz Reid,Naz,11,C-F,6-9,264,"AUG 26, 1999",26.0,6,Louisiana State
+1610612750,1642866,Joan Beringer,Joan,19,F,6-11,230,"NOV 11, 2006",19.0,R,
+1610612750,1641740,Jaylen Clark,Jaylen,22,G,6-5,205,"OCT 13, 2001",24.0,1,UCLA
+1610612750,1642402,Enrique Freeman,Enrique,25,F,6-9,220,"JUL 29, 2000",25.0,1,Akron
+1610612750,203497,Rudy Gobert,Rudy,27,C,7-1,258,"JUN 26, 1992",33.0,12,Cholet
+1610612750,203944,Julius Randle,Julius,30,F-C,6-9,250,"NOV 29, 1994",31.0,11,Kentucky
+1610612750,1631159,Leonard Miller,Leonard,33,F,6-10,220,"NOV 26, 2003",22.0,2,NBA G League Ignite
+1610612750,1642911,Rocco Zikarsky,Rocco,44,C,7-3,227,"JUL 11, 2006",19.0,R,
+1610612751,1630533,Ziaire Williams,Ziaire,1,F,6-9,185,"SEP 12, 2001",24.0,4,Stanford
+1610612751,1642874,Danny Wolf,Danny,2,F,6-11,250,"MAY 05, 2004",21.0,R,Michigan
+1610612751,1642962,Drake Powell,Drake,4,G-F,6-5,195,"SEP 08, 2005",20.0,R,North Carolina
+1610612751,1629312,Haywood Highsmith,Haywood,7,F,6-5,220,"DEC 09, 1996",29.0,5,Wheeling Jesuit
+1610612751,1642856,Egor Dëmin,Egor,8,G,6-8,200,"MAR 03, 2006",19.0,R,Brigham Young
+1610612751,1630604,E.J. Liddell,E.J.,9,F,6-6,240,"DEC 18, 2000",25.0,2,Ohio State
+1610612751,1630623,Tyson Etienne,Tyson,10,G,6-0,200,"SEP 17, 1999",26.0,1,Wichita State
+1610612751,1631213,Tyrese Martin,Tyrese,13,F,6-6,215,"MAR 07, 1999",26.0,2,Connecticut
+1610612751,1629611,Terance Mann,Terance,14,G-F,6-6,215,"OCT 18, 1996",29.0,6,Florida State
+1610612751,1629008,Michael Porter Jr.,Michael,17,F,6-10,218,"JUN 29, 1998",27.0,6,Missouri
+1610612751,1630549,Day'Ron Sharpe,Day'Ron,20,C,6-10,265,"NOV 06, 2001",24.0,4,North Carolina
+1610612751,1641730,Noah Clowney,Noah,21,F-C,6-10,210,"JUL 14, 2004",21.0,2,Alabama
+1610612751,1630592,Jalen Wilson,Jalen,22,F,6-6,220,"NOV 04, 2000",25.0,2,Kansas
+1610612751,1630560,Cam Thomas,Cam,24,G,6-3,210,"OCT 13, 2001",24.0,4,Louisiana State
+1610612751,1629651,Nic Claxton,Nic,33,C,6-11,215,"APR 17, 1999",26.0,6,Georgia
+1610612751,1642879,Ben Saraf,Ben,77,G,6-6,200,"APR 14, 2006",19.0,R,Ratiopharm Ulm
+1610612751,1642849,Nolan Traore,Nolan,88,G,6-3,185,"MAY 28, 2006",19.0,R,Saint-Quentin
+1610612752,203903,Jordan Clarkson,Jordan,00,G,6-5,194,"JUN 07, 1992",33.0,11,Missouri
+1610612752,1630540,Miles McBride,Miles,2,G,6-2,195,"SEP 08, 2000",25.0,4,West Virginia
+1610612752,1628404,Josh Hart,Josh,3,G,6-5,215,"MAR 06, 1995",30.0,8,Villanova
+1610612752,1642359,Pacôme Dadiet,Pacôme,4,F,6-9,210,"JUL 27, 2005",20.0,1,Ratiopharm Ulm
+1610612752,1628384,OG Anunoby,OG,8,F-G,6-7,240,"JUL 17, 1997",28.0,8,Indiana
+1610612752,1641755,Kevin McCullar Jr.,Kevin,9,G,6-6,210,"MAR 15, 2001",24.0,1,Kansas
+1610612752,1628973,Jalen Brunson,Jalen,11,G,6-2,190,"AUG 31, 1996",29.0,7,Villanova
+1610612752,1642278,Tyler Kolek,Tyler,13,G,6-2,195,"MAR 27, 2001",24.0,1,Marquette
+1610612752,1641787,Tosan Evbuomwan,Tosan,20,F,6-8,217,"FEB 16, 2001",24.0,2,Princeton
+1610612752,1629011,Mitchell Robinson,Mitchell,23,C-F,7-0,240,"APR 01, 1998",27.0,7,Western Kentucky
+1610612752,1628969,Mikal Bridges,Mikal,25,G-F,6-6,209,"AUG 30, 1996",29.0,7,Villanova
+1610612752,1627824,Guerschon Yabusele,Guerschon,28,F,6-7,265,"DEC 17, 1995",30.0,3,"Rouen, France"
+1610612752,1626157,Karl-Anthony Towns,Karl-Anthony,32,C-F,7-0,248,"NOV 15, 1995",30.0,10,Kentucky
+1610612752,1629013,Landry Shamet,Landry,44,G,6-5,190,"MAR 13, 1997",28.0,7,Wichita State
+1610612752,1641998,Trey Jemison III,Trey,50,C,6-10,270,"NOV 28, 1999",26.0,2,Alabama-Birmingham
+1610612752,1642885,Mohamed Diawara,Mohamed,51,F,6-9,225,"APR 29, 2005",20.0,R,
+1610612752,1630574,Ariel Hukporti,Ariel,55,C,7-0,246,"APR 12, 2002",23.0,1,Riesen Ludwigsburg
+1610612753,1641710,Anthony Black,Anthony,0,G,6-7,200,"JAN 20, 2004",21.0,2,Arkansas
+1610612753,1628371,Jonathan Isaac,Jonathan,1,F,6-10,230,"OCT 03, 1997",28.0,8,Florida State
+1610612753,1626145,Tyus Jones,Tyus,2,G,6-0,196,"MAY 10, 1996",29.0,10,Duke
+1610612753,1630217,Desmond Bane,Desmond,3,G,6-6,215,"JUN 25, 1998",27.0,5,TCU
+1610612753,1630591,Jalen Suggs,Jalen,4,G,6-5,205,"JUN 03, 2001",24.0,4,Gonzaga
+1610612753,1631094,Paolo Banchero,Paolo,5,F,6-10,250,"NOV 12, 2002",23.0,3,Duke
+1610612753,1631115,Orlando Robinson,Orlando,7,C,6-10,235,"JUL 10, 2000",25.0,3,Fresno State
+1610612753,1631288,Jamal Cain,Jamal,8,F,6-7,191,"MAR 20, 1999",26.0,3,Oakland
+1610612753,1642859,Jase Richardson,Jase,11,G,6-1,180,"OCT 16, 2005",20.0,R,Michigan State
+1610612753,1641724,Jett Howard,Jett,13,G,6-8,215,"SEP 14, 2003",22.0,2,Michigan
+1610612753,1630658,Colin Castleton,Colin,14,C,6-10,250,"MAY 25, 2000",25.0,2,Florida
+1610612753,1629021,Moritz Wagner,Moritz,21,F-C,6-11,245,"APR 26, 1997",28.0,7,Michigan
+1610612753,1630532,Franz Wagner,Franz,22,F,6-10,220,"AUG 27, 2001",24.0,4,Michigan
+1610612753,1641783,Tristan da Silva,Tristan,23,F,6-8,217,"MAY 15, 2001",24.0,1,Colorado
+1610612753,1628976,Wendell Carter Jr.,Wendell,34,C-F,6-10,270,"APR 16, 1999",26.0,7,Duke
+1610612753,1629048,Goga Bitadze,Goga,35,C-F,6-11,250,"JUL 20, 1999",26.0,6,Mega Basket
+1610612753,1642869,Noah Penda,Noah,93,G-F,6-7,215,"JAN 07, 2005",20.0,R,
+1610612754,1630169,Tyrese Haliburton,Tyrese,0,G,6-5,185,"FEB 29, 2000",25.0,5,Iowa State
+1610612754,1631097,Bennedict Mathurin,Bennedict,00,G-F,6-5,210,"JUN 19, 2002",23.0,3,Arizona
+1610612754,1630167,Obi Toppin,Obi,1,F,6-9,220,"MAR 04, 1998",27.0,5,Dayton
+1610612754,1629614,Andrew Nembhard,Andrew,2,G-F,6-4,191,"JAN 16, 2000",25.0,3,Gonzaga
+1610612754,1643007,Taelon Peter,Taelon,4,G,6-3,185,"FEB 27, 2002",23.0,R,Liberty
+1610612754,1641716,Jarace Walker,Jarace,5,F,6-7,235,"SEP 04, 2003",22.0,2,Houston
+1610612754,1642880,Kam Jones,Kam,7,G,6-4,200,"FEB 25, 2002",23.0,R,Marquette
+1610612754,204456,T.J. McConnell,T.J.,9,G,6-1,190,"MAR 25, 1992",33.0,10,Arizona
+1610612754,1630164,James Wiseman,James,11,C,6-11,240,"MAR 31, 2001",24.0,5,Memphis
+1610612754,1642277,Johnny Furphy,Johnny,12,G,6-8,200,"DEC 08, 2004",21.0,1,Kansas
+1610612754,1628396,Tony Bradley,Tony,13,C-F,6-10,248,"JAN 08, 1998",27.0,7,North Carolina
+1610612754,1630543,Isaiah Jackson,Isaiah,22,F,6-8,205,"JAN 10, 2002",23.0,4,Kentucky
+1610612754,1630174,Aaron Nesmith,Aaron,23,G-F,6-5,215,"OCT 16, 1999",26.0,5,Vanderbilt
+1610612754,1629726,Garrison Mathews,Garrison,24,G,6-5,215,"OCT 24, 1996",29.0,6,Lipscomb
+1610612754,1641767,Ben Sheppard,Ben,26,G,6-6,190,"JUL 16, 2001",24.0,2,Belmont
+1610612754,1631245,Quenton Jackson,Quenton,29,G,6-4,173,"SEP 15, 1998",27.0,3,Texas A&M
+1610612754,1630643,Jay Huff,Jay,32,C,7-1,240,"AUG 25, 1997",28.0,4,Virginia
+1610612754,1627783,Pascal Siakam,Pascal,43,F,6-8,245,"APR 02, 1994",31.0,9,New Mexico State
+1610612754,1630679,Ethan Thompson,Ethan,55,G,6-4,195,"MAY 04, 1999",26.0,R,Oregon State
+1610612755,1630178,Tyrese Maxey,Tyrese,0,G,6-2,200,"NOV 04, 2000",25.0,5,Kentucky
+1610612755,203083,Andre Drummond,Andre,1,C,6-11,279,"AUG 10, 1993",32.0,13,Connecticut
+1610612755,1629656,Quentin Grimes,Quentin,5,G,6-4,210,"MAY 08, 2000",25.0,4,Houston
+1610612755,200768,Kyle Lowry,Kyle,7,G,6-0,196,"MAR 25, 1986",39.0,19,Villanova
+1610612755,202331,Paul George,Paul,8,F,6-8,220,"MAY 02, 1990",35.0,15,Fresno State
+1610612755,1626162,Kelly Oubre Jr.,Kelly,9,F-G,6-8,203,"DEC 09, 1995",30.0,10,Kansas
+1610612755,1642348,Justin Edwards,Justin,11,F,6-7,203,"DEC 16, 2003",22.0,1,Kentucky
+1610612755,1630570,Trendon Watford,Trendon,12,G-F,6-8,237,"NOV 09, 2000",25.0,4,Louisiana State
+1610612755,1642272,Jared McCain,Jared,20,G,6-3,195,"FEB 20, 2004",21.0,1,Duke
+1610612755,203954,Joel Embiid,Joel,21,C-F,7-0,280,"MAR 16, 1994",31.0,9,Kansas
+1610612755,1641780,Johni Broome,Johni,22,F,6-10,235,"JUL 19, 2002",23.0,R,Auburn
+1610612755,201569,Eric Gordon,Eric,23,G,6-3,215,"DEC 25, 1988",36.0,17,Indiana
+1610612755,1631230,Dominick Barlow,Dominick,25,F,6-9,215,"MAY 26, 2003",22.0,3,Overtime Elite
+1610612755,1641737,Adem Bona,Adem,30,F,6-10,235,"MAR 28, 2003",22.0,1,UCLA
+1610612755,1631133,Jabari Walker,Jabari,33,F,6-7,237,"JUL 30, 2002",23.0,3,Colorado
+1610612755,1642282,Hunter Sallis,Hunter,45,G,6-4,185,"MAR 26, 2003",22.0,R,Wake Forest
+1610612755,1642845,VJ Edgecombe,VJ,77,G,6-4,180,"JUL 30, 2005",20.0,R,Baylor
+1610612756,1626220,Royce O'Neale,Royce,00,F,6-6,226,"JUN 05, 1993",32.0,8,Baylor
+1610612756,1642346,Ryan Dunn,Ryan,0,F,6-7,216,"JAN 07, 2003",22.0,1,Virginia
+1610612756,1626164,Devin Booker,Devin,1,G,6-5,206,"OCT 30, 1996",29.0,10,Kentucky
+1610612756,1630208,Nick Richards,Nick,2,C,6-11,245,"NOV 29, 1997",28.0,5,Kentucky
+1610612756,1628415,Dillon Brooks,Dillon,3,G-F,6-7,225,"JAN 22, 1996",29.0,8,Oregon
+1610612756,1630224,Jalen Green,Jalen,4,G,6-4,186,"FEB 09, 2002",23.0,4,NBA G League Ignite
+1610612756,1628960,Grayson Allen,Grayson,8,G,6-3,198,"OCT 08, 1995",30.0,7,Duke
+1610612756,1642863,Khaman Maluach,Khaman,10,C,7-1,250,"SEP 14, 2006",19.0,R,Duke
+1610612756,1642345,Oso Ighodaro,Oso,11,F,6-11,235,"JUL 14, 2002",23.0,1,Marquette
+1610612756,1631221,Collin Gillespie,Collin,12,G,6-1,195,"JUN 25, 1999",26.0,2,Villanova
+1610612756,1642886,Koby Brea,Koby,14,G,6-5,215,"NOV 06, 2002",23.0,R,Kentucky
+1610612756,1631109,Mark Williams,Mark,15,C,7-1,240,"DEC 16, 2001",24.0,3,Duke
+1610612756,1631123,Jamaree Bouyea,Jamaree,15,G,6-2,180,"JUN 27, 1999",26.0,3,San Francisco
+1610612756,1630587,Isaiah Livers,Isaiah,18,F,6-6,232,"JUL 28, 1998",27.0,3,Michigan
+1610612756,1642853,Rasheer Fleming,Rasheer,20,F,6-9,240,"JUL 10, 2004",21.0,R,St. Joseph's (PA)
+1610612756,1628502,Nigel Hayes-Davis,Nigel,21,F,6-7,254,"DEC 16, 1994",31.0,1,Wisconsin
+1610612756,1630692,Jordan Goodwin,Jordan,23,G,6-3,215,"OCT 23, 1998",27.0,4,St. Louis
+1610612757,1630703,Scoot Henderson,Scoot,00,G,6-3,207,"FEB 03, 2004",21.0,2,NBA G League Ignite
+1610612757,203081,Damian Lillard,Damian,0,G,6-2,200,"JUL 15, 1990",35.0,13,Weber State
+1610612757,1631104,Blake Wesley,Blake,1,G,6-4,190,"MAR 16, 2003",22.0,3,Notre Dame
+1610612757,1631126,Caleb Love,Caleb,2,G,6-3,212,"SEP 27, 2001",24.0,R,Arizona
+1610612757,1629680,Matisse Thybulle,Matisse,4,G-F,6-5,202,"MAR 04, 1997",28.0,6,Washington
+1610612757,201950,Jrue Holiday,Jrue,5,G,6-4,220,"JUN 12, 1990",35.0,16,UCLA
+1610612757,1630166,Deni Avdija,Deni,8,F,6-8,228,"JAN 03, 2001",24.0,5,Maccabi Tel Aviv
+1610612757,203924,Jerami Grant,Jerami,9,F,6-7,213,"MAR 12, 1994",31.0,11,Syracuse
+1610612757,1642905,Yang Hansen,Hansen,16,C,7-1,270,"JUN 26, 2005",20.0,R,
+1610612757,1631101,Shaedon Sharpe,Shaedon,17,G,6-5,210,"MAY 30, 2003",22.0,3,Kentucky
+1610612757,1631451,Javonte Cooke,Javonte,18,G,6-6,185,"JUL 11, 1999",26.0,R,Winston-Salem
+1610612757,1641712,Rayan Rupert,Rayan,21,G-F,6-7,205,"MAY 31, 2004",21.0,2,New Zealand Breakers
+1610612757,1642270,Donovan Clingan,Donovan,23,C,7-2,280,"FEB 23, 2004",21.0,1,Connecticut
+1610612757,1631200,Kris Murray,Kris,24,F,6-8,218,"AUG 19, 2000",25.0,2,Iowa
+1610612757,1641871,Duop Reath,Duop,26,C,6-9,245,"JUN 26, 1996",29.0,2,Louisiana State
+1610612757,1641739,Toumani Camara,Toumani,33,F,6-7,230,"MAY 08, 2000",25.0,2,Dayton
+1610612757,1629057,Robert Williams III,Robert,35,C-F,6-9,249,"OCT 17, 1997",28.0,7,Texas A&M
+1610612757,1631321,Sidy Cissoko,Sidy,91,G,6-6,220,"APR 02, 2004",21.0,2,NBA G League Ignite
+1610612758,1628370,Malik Monk,Malik,0,G,6-3,200,"FEB 04, 1998",27.0,8,Kentucky
+1610612758,1642363,Nique Clifford,Nique,5,G,6-5,175,"FEB 09, 2002",23.0,R,Colorado State
+1610612758,203926,Doug McDermott,Doug,7,F,6-7,225,"JAN 03, 1992",33.0,11,Creighton
+1610612758,203897,Zach LaVine,Zach,8,G,6-5,200,"MAR 10, 1995",30.0,11,UCLA
+1610612758,1630173,Precious Achiuwa,Precious,9,F,6-8,243,"SEP 19, 1999",26.0,5,Memphis
+1610612758,201942,DeMar DeRozan,DeMar,10,G-F,6-6,220,"AUG 07, 1989",36.0,16,Southern California
+1610612758,1627734,Domantas Sabonis,Domantas,11,F-C,6-10,240,"MAY 03, 1996",29.0,9,Gonzaga
+1610612758,1631099,Keegan Murray,Keegan,13,F,6-8,225,"AUG 19, 2000",25.0,3,Iowa
+1610612758,203471,Dennis Schröder,Dennis,17,G,6-1,175,"SEP 15, 1993",32.0,12,Braunschweig
+1610612758,201566,Russell Westbrook,Russell,18,G,6-4,200,"NOV 12, 1988",37.0,17,UCLA
+1610612758,1629234,Drew Eubanks,Drew,19,F-C,6-10,245,"FEB 01, 1997",28.0,7,Oregon State
+1610612758,203967,Dario Šarić,Dario,20,F-C,6-10,225,"APR 08, 1994",31.0,9,Anadolu Efes
+1610612758,1642269,Devin Carter,Devin,22,G,6-2,195,"MAR 18, 2002",23.0,1,Providence
+1610612758,1631165,Keon Ellis,Keon,23,G,6-4,175,"JAN 08, 2000",25.0,3,Alabama
+1610612758,1641815,Isaiah Stevens,Isaiah,24,G,5-11,185,"NOV 01, 2000",25.0,1,Colorado State
+1610612758,1631342,Daeqwon Plowden,Daeqwon,29,G-F,6-4,216,"AUG 29, 1998",27.0,1,Bowling Green
+1610612758,1642928,Dylan Cardwell,Dylan,32,C,6-10,255,"DEC 16, 2001",24.0,R,Auburn
+1610612758,1642875,Maxime Raynaud,Maxime,42,C,7-1,250,"APR 07, 2003",22.0,R,Stanford
+1610612759,1629162,Jordan McLaughlin,Jordan,0,G,5-11,185,"APR 09, 1996",29.0,6,Southern California
+1610612759,1641705,Victor Wembanyama,Victor,1,F-C,7-4,235,"JAN 04, 2004",21.0,2,Metropolitans 92
+1610612759,1642844,Dylan Harper,Dylan,2,G,6-5,215,"MAR 02, 2006",19.0,R,Rutgers
+1610612759,1629640,Keldon Johnson,Keldon,3,F-G,6-6,220,"OCT 11, 1999",26.0,6,Kentucky
+1610612759,1628368,De'Aaron Fox,De'Aaron,4,G,6-3,185,"DEC 20, 1997",28.0,8,Kentucky
+1610612759,1642264,Stephon Castle,Stephon,5,G,6-6,215,"NOV 01, 2004",21.0,1,Connecticut
+1610612759,1628436,Luke Kornet,Luke,7,C-F,7-1,250,"JUL 15, 1995",30.0,8,Vanderbilt
+1610612759,203482,Kelly Olynyk,Kelly,8,F-C,7-0,240,"APR 19, 1991",34.0,12,Gonzaga
+1610612759,1631110,Jeremy Sochan,Jeremy,10,F,6-8,230,"MAY 20, 2003",22.0,3,Baylor
+1610612759,1642868,Carter Bryant,Carter,11,F,6-6,220,"NOV 26, 2005",20.0,R,Arizona
+1610612759,1630649,Stanley Umude,Stanley,17,G,6-6,210,"APR 12, 1999",26.0,3,Arkansas
+1610612759,202687,Bismack Biyombo,Bismack,18,C,6-8,255,"AUG 28, 1992",33.0,14,Baloncesto Fuenlabrada
+1610612759,1630170,Devin Vassell,Devin,24,G-F,6-5,200,"AUG 23, 2000",25.0,5,Florida State
+1610612759,1642357,David Jones Garcia,David,25,F,6-4,210,"NOV 24, 2001",24.0,R,Memphis
+1610612759,1630577,Julian Champagnie,Julian,30,F,6-7,217,"JUN 29, 2001",24.0,3,St. John's
+1610612759,203084,Harrison Barnes,Harrison,40,F,6-7,225,"MAY 30, 1992",33.0,13,North Carolina
+1610612759,1630322,Lindy Waters III,Lindy,43,F,6-5,210,"JUL 28, 1997",28.0,4,Oklahoma State
+1610612759,1631127,Harrison Ingram,Harrison,55,F,6-5,230,"NOV 27, 2002",23.0,1,North Carolina
+1610612760,1628983,Shai Gilgeous-Alexander,Shai,2,G,6-6,195,"JUL 12, 1998",27.0,7,Kentucky
+1610612760,1642959,Chris Youngblood,Chris,3,G,6-4,,"FEB 09, 2002",23.0,R,Alabama
+1610612760,1629652,Luguentz Dort,Luguentz,5,G,6-4,220,"APR 19, 1999",26.0,6,Arizona State
+1610612760,1631119,Jaylin Williams,Jaylin,6,F,6-9,240,"JUN 29, 2002",23.0,3,Arkansas
+1610612760,1631096,Chet Holmgren,Chet,7,C-F,7-1,208,"MAY 01, 2002",23.0,2,Gonzaga
+1610612760,1631114,Jalen Williams,Jalen,8,G-F,6-5,211,"APR 14, 2001",24.0,3,Santa Clara
+1610612760,1627936,Alex Caruso,Alex,9,G,6-5,186,"FEB 28, 1994",31.0,8,Texas A&M
+1610612760,1630198,Isaiah Joe,Isaiah,11,G,6-4,165,"JUL 02, 1999",26.0,5,Arkansas
+1610612760,1642850,Thomas Sorber,Thomas,12,C,6-9,250,"DEC 25, 2005",19.0,R,Georgetown
+1610612760,1631172,Ousmane Dieng,Ousmane,13,F,6-9,185,"MAY 21, 2003",22.0,3,New Zealand Breakers
+1610612760,1642382,Branden Carlson,Branden,15,C,7-0,220,"JUN 14, 1999",26.0,1,Utah
+1610612760,1630598,Aaron Wiggins,Aaron,21,G,6-5,190,"JAN 02, 1999",26.0,4,Maryland
+1610612760,1641717,Cason Wallace,Cason,22,G,6-3,195,"NOV 07, 2003",22.0,2,Kentucky
+1610612760,1642964,Brooks Barnhizer,Brooks,23,G,6-5,230,"MAR 02, 2002",23.0,R,Northwestern
+1610612760,1642349,Ajay Mitchell,Ajay,25,G,6-4,190,"JUN 25, 2002",23.0,1,California-Santa Barbara
+1610612760,1629026,Kenrich Williams,Kenrich,34,G-F,6-7,210,"DEC 02, 1994",31.0,7,TCU
+1610612760,1642260,Nikola Topić,Nikola,44,G,6-6,200,"AUG 10, 2005",20.0,R,Crvena zvezda
+1610612760,1628392,Isaiah Hartenstein,Isaiah,55,C-F,7-0,250,"MAY 05, 1998",27.0,7,Zalgiris
+1610612761,1630639,A.J. Lawson,A.J.,0,G,6-6,179,"JUL 15, 2000",25.0,3,South Carolina
+1610612761,1641711,Gradey Dick,Gradey,1,G-F,6-7,200,"NOV 20, 2003",22.0,2,Kansas
+1610612761,1642367,Jonathan Mogbo,Jonathan,2,F,6-9,225,"OCT 29, 2001",24.0,1,San Francisco
+1610612761,1627742,Brandon Ingram,Brandon,3,F,6-8,190,"SEP 02, 1997",28.0,9,Duke
+1610612761,1630567,Scottie Barnes,Scottie,4,F-G,6-8,237,"AUG 01, 2001",24.0,4,Florida State
+1610612761,1630193,Immanuel Quickley,Immanuel,5,G,6-2,190,"JUN 17, 1999",26.0,5,Kentucky
+1610612761,1629628,RJ Barrett,RJ,9,F-G,6-6,214,"JUN 14, 2000",25.0,6,Duke
+1610612761,1642867,Collin Murray-Boyles,Collin,12,F,6-7,245,"JUN 10, 2005",20.0,R,South Carolina
+1610612761,1642266,Ja'Kobe Walter,Ja'Kobe,14,G,6-4,180,"SEP 04, 2004",21.0,1,Baylor
+1610612761,202066,Garrett Temple,Garrett,17,G-F,6-5,195,"MAY 08, 1986",39.0,15,Louisiana State
+1610612761,1627751,Jakob Poeltl,Jakob,19,C,7-0,253,"OCT 15, 1995",30.0,9,Utah
+1610612761,1642347,Jamal Shead,Jamal,23,G,6-1,200,"JUL 24, 2002",23.0,1,Houston
+1610612761,1642935,Chucky Hepburn,Chucky,24,G,6-0,190,"FEB 09, 2003",22.0,R,Louisville
+1610612761,1630534,Ochai Agbaji,Ochai,30,G,6-5,215,"APR 20, 2000",25.0,3,Kansas
+1610612761,1630572,Sandro Mamukelashvili,Sandro,54,F-C,6-9,240,"MAY 23, 1999",26.0,4,Seton Hall
+1610612761,1642918,Alijah Martin,Alijah,55,G,6-2,210,"DEC 26, 2001",23.0,R,Florida
+1610612761,1642419,Jamison Battle,Jamison,77,F,6-7,220,"MAY 10, 2001",24.0,1,Ohio State
+1610612762,1641707,Taylor Hendricks,Taylor,0,F,6-9,215,"NOV 22, 2003",22.0,2,Central Florida
+1610612762,203937,Kyle Anderson,Kyle,2,F-G,6-8,230,"SEP 20, 1993",32.0,11,UCLA
+1610612762,1641718,Keyonte George,Keyonte,3,G,6-4,185,"NOV 08, 2003",22.0,2,Baylor
+1610612762,1642262,Cody Williams,Cody,5,F,6-8,190,"NOV 20, 2004",21.0,1,Colorado
+1610612762,1642268,Isaiah Collier,Isaiah,8,G,6-4,210,"OCT 08, 2004",21.0,1,Southern California
+1610612762,1629004,Svi Mykhailiuk,Svi,10,G-F,6-7,205,"JUN 10, 1997",28.0,7,Kansas
+1610612762,1642383,Walter Clayton Jr.,Walter,13,G,6-4,195,"MAR 06, 2003",22.0,R,Florida
+1610612762,1641989,Elijah Harkless,Elijah,16,G,6-3,195,"FEB 03, 2000",25.0,1,UNLV
+1610612762,1642910,John Tonje,John,17,G,6-4,218,"APR 23, 2001",24.0,R,Wisconsin
+1610612762,1642846,Ace Bailey,Ace,19,F,6-9,200,"AUG 13, 2006",19.0,R,Rutgers
+1610612762,1642271,Kyle Filipowski,Kyle,22,C,6-11,250,"NOV 07, 2003",22.0,1,Duke
+1610612762,1628374,Lauri Markkanen,Lauri,23,F-C,7-1,240,"MAY 22, 1997",28.0,8,Arizona
+1610612762,1631117,Walker Kessler,Walker,24,C,7-2,245,"JUL 26, 2001",24.0,3,Auburn
+1610612762,1641729,Brice Sensabaugh,Brice,28,F,6-6,235,"OCT 30, 2003",22.0,2,Ohio State
+1610612762,203994,Jusuf Nurkić,Jusuf,30,C,6-11,290,"AUG 23, 1994",31.0,11,Cedevita
+1610612762,1627777,Georges Niang,Georges,31,F,6-6,230,"JUN 17, 1993",32.0,9,Iowa State
+1610612762,1631131,Oscar Tshiebwe,Oscar,34,F-C,6-8,255,"NOV 27, 1999",26.0,2,Kentucky
+1610612762,201567,Kevin Love,Kevin,42,F-C,6-10,251,"SEP 07, 1988",37.0,17,UCLA
+1610612763,1642942,Jahmai Mashack,Jahmai,,G,6-4,203,"NOV 10, 2002",23.0,R,Tennessee
+1610612763,1642377,Jaylen Wells,Jaylen,0,F,6-7,,"AUG 26, 2003",22.0,1,Washington State
+1610612763,1630590,Scotty Pippen Jr.,Scotty,1,G,6-2,170,"NOV 10, 2000",25.0,3,Vanderbilt
+1610612763,1629660,Ty Jerome,Ty,2,G-F,6-5,195,"JUL 08, 1997",28.0,6,Virginia
+1610612763,203484,Kentavious Caldwell-Pope,Kentavious,3,G,6-5,204,"FEB 18, 1993",32.0,12,Georgia
+1610612763,1631246,Vince Williams Jr.,Vince,5,G,6-4,205,"AUG 30, 2000",25.0,3,Virginia Commonwealth
+1610612763,1630583,Santi Aldama,Santi,7,F-C,7-0,215,"JAN 10, 2001",24.0,4,Loyola-Maryland
+1610612763,1628991,Jaren Jackson Jr.,Jaren,8,F-C,6-10,242,"SEP 15, 1999",26.0,7,Michigan State
+1610612763,1631132,Christian Koloko,Christian,10,C,6-11,225,"JUN 20, 2000",25.0,3,Arizona
+1610612763,1642914,Javon Small,Javon,10,G,6-1,190,"DEC 19, 2002",23.0,R,West Virginia
+1610612763,1629630,Ja Morant,Ja,12,G,6-2,174,"AUG 10, 1999",26.0,6,Murray State
+1610612763,1641744,Zach Edey,Zach,14,C,7-3,305,"MAY 14, 2002",23.0,1,Purdue
+1610612763,1629634,Brandon Clarke,Brandon,15,F,6-8,215,"SEP 19, 1996",29.0,6,Gonzaga
+1610612763,1641765,Olivier-Maxence Prosper,Olivier-Maxence,18,F,6-7,230,"JUL 03, 2002",23.0,2,Marquette
+1610612763,1642907,Cedric Coward,Cedric,23,G,6-5,206,"SEP 11, 2003",22.0,R,Washington State
+1610612763,1642285,Cam Spencer,Cam,24,G,6-3,205,"APR 06, 2000",25.0,1,Connecticut
+1610612763,1629111,Jock Landale,Jock,31,C,6-11,255,"OCT 25, 1995",30.0,4,St. Mary's
+1610612763,1641713,GG Jackson,GG,45,F,6-9,210,"DEC 17, 2004",21.0,2,South Carolina
+1610612763,1629723,John Konchar,John,46,G,6-5,210,"MAR 22, 1996",29.0,6,Indiana-Purdue Fort Wayne
+1610612764,1641731,Bilal Coulibaly,Bilal,0,G,6-7,195,"JUL 26, 2004",21.0,2,Metropolitans 92
+1610612764,1641774,Tristan Vukcevic,Tristan,00,F,7-0,220,"MAR 11, 2003",22.0,2,Real Madrid
+1610612764,1641715,Cam Whitmore,Cam,1,F,6-6,230,"JUL 08, 2004",21.0,2,Villanova
+1610612764,203468,CJ McCollum,CJ,3,G,6-3,190,"SEP 19, 1991",34.0,12,Lehigh
+1610612764,1642358,AJ Johnson,AJ,4,G,6-5,160,"DEC 01, 2004",21.0,1,Illawarra
+1610612764,1642364,Jamir Watkins,Jamir,5,F,6-6,210,"JUL 06, 2001",24.0,R,Florida State
+1610612764,1642267,Bub Carrington,Bub,7,G,6-4,190,"JUL 21, 2005",20.0,1,Pittsburgh
+1610612764,1631103,Malaki Branham,Malaki,8,F,6-4,180,"MAY 12, 2003",22.0,3,Ohio State
+1610612764,1630551,Justin Champagnie,Justin,9,G-F,6-6,206,"JUN 29, 2001",24.0,4,Pittsburgh
+1610612764,1642848,Tre Johnson,Tre,12,G,6-5,190,"MAR 07, 2006",19.0,R,Texas
+1610612764,1630536,Sharife Cooper,Sharife,13,G,6-0,176,"JUN 11, 2001",24.0,1,Auburn
+1610612764,1630264,Anthony Gill,Anthony,16,F,6-7,230,"OCT 17, 1992",33.0,5,Virginia
+1610612764,1642273,Kyshawn George,Kyshawn,18,F,6-8,200,"DEC 12, 2003",22.0,1,Miami
+1610612764,1642259,Alex Sarr,Alex,20,C,7-0,205,"APR 26, 2005",20.0,1,Washington Wizards
+1610612764,203114,Khris Middleton,Khris,22,F,6-7,222,"AUG 12, 1991",34.0,13,Texas A&M
+1610612764,1630557,Corey Kispert,Corey,24,F,6-6,224,"MAR 03, 1999",26.0,4,Gonzaga
+1610612764,1642860,Will Riley,Will,27,F,6-9,180,"FEB 10, 2006",19.0,R,Illinois-Urbana-Champaign
+1610612764,1628963,Marvin Bagley III,Marvin,35,F,6-10,235,"MAR 14, 1999",26.0,7,Duke
+1610612765,1631105,Jalen Duren,Jalen,0,C,6-10,250,"NOV 18, 2003",22.0,3,Memphis
+1610612765,1630595,Cade Cunningham,Cade,2,G,6-6,220,"SEP 25, 2001",24.0,4,Oklahoma State
+1610612765,1642403,Isaac Jones,Isaac,3,F,6-8,245,"JUL 11, 2000",25.0,1,Washington State
+1610612765,1641842,Ronald Holland II,Ronald,5,F,6-8,206,"JUL 07, 2005",20.0,1,NBA G League Ignite
+1610612765,1630194,Paul Reed,Paul,7,F,6-9,210,"JUN 14, 1999",26.0,5,DePaul
+1610612765,1627747,Caris LeVert,Caris,8,G,6-7,205,"AUG 25, 1994",31.0,9,Michigan
+1610612765,1641709,Ausar Thompson,Ausar,9,G-F,6-7,205,"JAN 30, 2003",22.0,2,Overtime Elite
+1610612765,1631111,Wendell Moore Jr.,Wendell,9,G,6-5,215,"SEP 18, 2001",24.0,3,Duke
+1610612765,202699,Tobias Harris,Tobias,12,F,6-8,226,"JUL 15, 1992",33.0,14,Tennessee
+1610612765,1642404,Chaz Lanier,Chaz,20,G,6-3,206,"DEC 19, 2001",24.0,R,Tennessee
+1610612765,1631093,Jaden Ivey,Jaden,23,G,6-3,195,"FEB 13, 2002",23.0,3,Purdue
+1610612765,1642450,Daniss Jenkins,Daniss,24,G,6-4,165,"AUG 17, 2001",24.0,1,St. John's
+1610612765,1631204,Marcus Sasser,Marcus,25,G,6-1,195,"SEP 21, 2000",25.0,2,Houston
+1610612765,1630191,Isaiah Stewart,Isaiah,28,F-C,6-8,250,"MAY 22, 2001",24.0,5,Washington
+1610612765,1629750,Javonte Green,Javonte,31,G,6-5,205,"JUL 23, 1993",32.0,6,Radford
+1610612765,1641752,Bobi Klintman,Bobi,34,F,6-9,225,"MAR 06, 2003",22.0,1,Wake Forest
+1610612765,1642449,Tolu Smith,Tolu,35,F,6-11,,"JUL 26, 2000",25.0,1,Mississippi State
+1610612765,1629130,Duncan Robinson,Duncan,55,F,6-7,215,"APR 22, 1994",31.0,7,Michigan
+1610612766,1628970,Miles Bridges,Miles,0,F,6-7,225,"MAR 21, 1998",27.0,6,Michigan State
+1610612766,1630163,LaMelo Ball,LaMelo,1,G,6-7,180,"AUG 22, 2001",24.0,5,Illawarra
+1610612766,1629684,Grant Williams,Grant,2,F,6-7,236,"NOV 30, 1998",27.0,6,Tennessee
+1610612766,1642883,Sion James,Sion,4,G,6-5,220,"DEC 04, 2002",23.0,R,Duke
+1610612766,1642851,Kon Knueppel,Kon,7,G-F,6-6,215,"AUG 03, 2005",20.0,R,Duke
+1610612766,1629012,Collin Sexton,Collin,8,G,6-3,190,"JAN 04, 1999",26.0,7,Alabama
+1610612766,1641809,Drew Peterson,Drew,9,F,6-8,205,"NOV 09, 1999",26.0,2,Southern California
+1610612766,1630182,Josh Green,Josh,10,G,6-6,200,"NOV 16, 2000",25.0,5,Arizona
+1610612766,1641750,Ryan Kalkbrenner,Ryan,11,C,7-1,256,"JAN 17, 2002",23.0,R,Creighton
+1610612766,1641810,Antonio Reeves,Antonio,12,G,6-5,205,"NOV 20, 2000",25.0,1,Kentucky
+1610612766,1631217,Moussa Diabaté,Moussa,14,F,6-10,210,"JAN 21, 2002",23.0,3,Michigan
+1610612766,1626192,Pat Connaughton,Pat,21,G,6-5,209,"JAN 06, 1993",32.0,10,Notre Dame
+1610612766,203486,Mason Plumlee,Mason,22,F-C,7-0,254,"MAR 05, 1990",35.0,12,Duke
+1610612766,1630544,Tre Mann,Tre,23,G,6-4,178,"FEB 03, 2001",24.0,4,Florida
+1610612766,1641706,Brandon Miller,Brandon,24,F,6-7,200,"NOV 22, 2002",23.0,2,Alabama
+1610612766,1642354,KJ Simpson,KJ,25,G,6-2,189,"AUG 08, 2002",23.0,1,Colorado
+1610612766,1642275,Tidjane Salaün,Tidjane,31,F,6-10,207,"AUG 10, 2005",20.0,1,Cholet
+1610612766,1642862,Liam McNeeley,Liam,33,F,6-7,210,"OCT 10, 2005",20.0,R,Connecticut

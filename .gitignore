@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+target/
+*.jar
+*.war
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.venv/
+venv/
+ENV/
+
+# ML Models (large files - optional to track)
+# nba-zone/ml/models/*.joblib
+
+# Vite cache
+.vite/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+*.bak
+*.tmp
+.cache/
